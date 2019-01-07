@@ -1,0 +1,27 @@
+table {
+
+	margin-top: 50px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+	line-height: 30px;
+
+	  
+}
+
+table td {
+
+	font-style: italic;
+	padding-left: 30px;
+}
+
+img {
+	
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+}
+
+.col-sm-10 {
+
+	margin-top: 25px;
+}

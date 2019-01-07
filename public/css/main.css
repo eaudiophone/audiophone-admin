@@ -1,0 +1,96 @@
+body {
+
+	font-family: helvetica;
+}
+
+.navbar-brand {
+
+	font-style: italic;
+}
+
+/*Barra lateral*/
+
+.sidebar {
+
+	margin-top: 56px;
+	position: fixed;
+	top: 0;
+ 	bottom: 0;
+  	left: 0;
+  	z-index: 100; /* Behind the navbar */
+  	padding: 0;
+  	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+
+}
+
+.sidebar-sticky {
+ 	
+ 	position: -webkit-sticky;
+  	position: sticky;
+  	top: 48px; /* Height of navbar */
+  	height: calc(100vh - 48px);
+  	padding-top: .5rem;
+  	overflow-x: hidden;
+  	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+
+}
+
+.sidebar-sticky h6 {
+
+	text-decoration: underline;
+	font-weight: 500;
+	text-align: left;
+	font-style: italic;
+	margin-top: 25px;
+	font-size: 20px;
+	margin-bottom: 25px;
+	padding-left: 30px;
+
+}
+
+.sidebar .nav-link {
+
+	font-weight: 500;
+	color: black;
+}
+
+.sidebar .nav-link:active {
+
+	color:  #007bff;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  
+  color: inherit; 
+
+}
+
+
+.sidebar-sticky i {
+
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+footer.sticky-footer {
+
+	display: -webkit-box;
+ 	display: -ms-flexbox;
+  	display: flex;
+  	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	width: calc(100% - 90px);
+  	height: 40px;
+  	background-color: #e9ecef;
+}
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: helvetica;
+}
