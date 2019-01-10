@@ -30,7 +30,7 @@ $(document).ready(function() {
 		/*Evento por día (Ventana Modal)*/
 		dayClick: function(date, jsEvent, view) {
 
-			//llama a la ventana modal
+			//invoca la ventana modal
 			$('#modalCalendar').modal();
 
 			//cambia el blackground del cuadro

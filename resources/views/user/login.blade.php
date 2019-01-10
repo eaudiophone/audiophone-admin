@@ -41,21 +41,21 @@
 		<!-- Formulario2 -->
 		<label for="inputPassword" class="sr-only">Password</label>
 		<input type="password" id="inputPassword" class="form-control"
-		placeholder="password" required>
+		placeholder="contraseña" required>
 
 		<!-- Button -->
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Acceder</button>
 		<button class="btn btn-lg btn-default btn-block" type="reset">Cancelar</button>
 
 		<!-- Link de registro -->
 		<div class="links">
 			<p>
-				¿Es la primera que ingresa? 
-				<a href="">Regístrese</a>
+				¿Es la primera vez? 
+				<a href="/user/createUser">Regístrese</a>
 			</p>
 			<p>
 				¿Olvido su contraseña?
-				<a href="">Click aqui</a>
+				<a href="user/recoveryPassword">Click aqui</a>
 			</p>
 			
 		</div>

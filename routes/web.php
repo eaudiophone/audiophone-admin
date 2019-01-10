@@ -27,8 +27,12 @@ Route::get('/', function () {
 |
 */
 
-Route::get('/user/login', function () {
+Route::get('/', function () {
     return view('user/login');
+});
+
+Route::get('/user/recoveryPassword', function() {
+	return view('user/recoveryPassword');
 });
 
 
@@ -47,6 +51,14 @@ Route::get('/user/index', function() {
 
 Route::get('/user/createUser', function () {
     return view('user/createUser');
+});
+
+Route::get('/user/createUser2', function () {
+    return view('user/createUser2');
+});
+
+Route::get('/user/createUser3', function () {
+    return view('user/createUser3');
 });
 
 /*
@@ -74,4 +86,8 @@ Route::get('meeting/diagnostic/index', function() {
 
 Route::get('meeting/records/index', function() {
 	return view('meeting/records/index');
+});
+
+Route::get('layouts/dashboardAdmin', function() {
+	return view('layouts/dashboardAdmin');
 });

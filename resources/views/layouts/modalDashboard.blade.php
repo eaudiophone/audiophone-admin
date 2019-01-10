@@ -93,7 +93,7 @@ aria-hidden="true">
 
 					<strong>ATENCIÓN:</strong><br><br>
 					El servicio de Alquiler de Equipos se realiza por día, cada fin de semana.
-					(viernes, sabado y domingo)
+					(Viernes, Sabado y Domingo)
 
 				</p>
 			</div>
@@ -128,7 +128,7 @@ aria-hidden="true">
 				 	en contacto a través de sus telefonos para confirmar el servicio. <br><br>
 
 					<strong>ATENCIÓN:</strong><br><br>
-					El servicio de Diagnostico de Equipos se realiza los días domingos.
+					El servicio de Diagnostico de Equipos se realiza los días Domingos.
 
 				</p>
 			</div>
@@ -163,7 +163,7 @@ aria-hidden="true">
 				 	en contacto a través de sus telefonos para confirmar el servicio. <br><br>
 
 					<strong>ATENCIÓN:</strong><br><br>
-					El servicio de Grabación de Audio se realiza de lunes a Jueves.
+					El servicio de Grabación de Audio se realiza de Lunes a Jueves.
 
 				</p>
 			</div>
@@ -178,7 +178,7 @@ aria-hidden="true">
 
 
 <!-- Modal del calendario -->
-<div class="modal fade" tabindex="-1" role="dialog" id="modalCalendar" aria-labelledby="modal05"
+<div class="modal fade" tabindex="-1" role="dialog" id="modalCalendar" aria-labelledby="modal06"
 aria-hidden="true">
  	<div class="modal-dialog" role="document">
     	<div class="modal-content">
