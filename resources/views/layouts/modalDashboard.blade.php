@@ -176,7 +176,6 @@ aria-hidden="true">
 	</div>
 </div>
 
-
 <!-- Modal del calendario -->
 <div class="modal fade" tabindex="-1" role="dialog" id="modalCalendar" aria-labelledby="modal06"
 aria-hidden="true">
@@ -198,3 +197,4 @@ aria-hidden="true">
     </div>
   </div>
 </div>
+

@@ -41,15 +41,13 @@
 					</div>
 					<div class="row" id="progress-bar">
 						
-						<div class="col-sm-10">
+						<div class="col-sm-12">
 							<div class="progress" >
 								<div class="progress-bar" role="progressbar" style="width: 0%" 
-								aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+								aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+									0%
+								</div>
 							</div>
-						</div>
-						
-						<div class="col-sm-2">
-							<strong>0%</strong>
 						</div>
 					</div>
 				</div>
@@ -131,7 +129,7 @@
 				<a href="/" class="">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="" class="">Forgot password</a>
+				<a href="" class="">Olvido Contraseña</a>
 			</div>
 		</div>
 	</div>

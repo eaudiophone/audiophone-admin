@@ -72,6 +72,10 @@
 									<th>País:</th>
 									<td>país</td>
 								</tr>
+								<tr>
+									<th>Tipo de perfil:</th>
+									<td>tipo</td>
+								</tr>
 							</tbody>
 						</table>
 					</center>

@@ -36,15 +36,14 @@
 					</div>
 					<div class="row" id="progress-bar">
 						
-						<div class="col-sm-10">
+						<div class="col-sm-12">
 							<div class="progress">
-								<div class="progress-bar" role="progressbar" style="width: 33.3%" 
-								aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar" role="progressbar" style="width: 0%" 
+								aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" id="bar">
+									<!-- Valor interno de la barra -->
+									33.3%
+								</div>
 							</div>
-						</div>
-						
-						<div class="col-sm-2">
-							<strong>33.3%</strong>
 						</div>
 					</div>
 				</div>
@@ -112,7 +111,7 @@
 				<a href="/" class="">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="" class="">Forgot password</a>
+				<a href="" class="">Olvido Contraseña</a>
 			</div>
 		</div>
 	</div>
@@ -120,6 +119,28 @@
 	<!-- JS -->
 	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>
 	<script text="text/javascript" src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
+
+	<script>
+
+			//animacion de progress bar (JavaScript)
+			var progreso = 0;
+
+			var idInterval = setInterval(function() {
+
+				//aumento del 10 en el progreso
+				progreso += 33.3;
+				$('#bar').css('width', progreso + '%');
+
+				if (progreso == 33.3) {
+
+					clearInterval(idInterval);
+				}
+			},
+
+			//cantidad de segundos
+			500);
+
+	</script>
 
 	</body>
 </html>	

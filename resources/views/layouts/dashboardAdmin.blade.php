@@ -38,18 +38,18 @@
 
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
-					<a href="" class="dropdown-item">
+					<a href="index" class="dropdown-item">
 						<i class="fas fa-w fa-calendar"></i>
 						<span>Agenda</span>
 					</a>
-					<a href="" class="dropdown-item">
+					<a href="profile" class="dropdown-item">
 						<i class="fas fa-w fa-user"></i>
 						<span>Usuarios</span>
 					</a>
 
 					<a href="" class="dropdown-item">
 						<i class="fas fa-w fa-clipboard"></i>
-						<span>Presupuesto</span>
+						<span>Términos</span>
 					</a>
 					
 
@@ -123,14 +123,14 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="" class="nav-link">
+							<a href="index" class="nav-link">
 								<i class="far fa-w fa-calendar"></i>
 								<span>Agenda de trabajo</span>
 							</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="" class="nav-link">
+							<a href="profiles" class="nav-link">
 								<i class="fas fa-w fa-user"></i>
 								<span>Usuarios</span>
 							</a>
@@ -139,7 +139,7 @@
 						<li class="nav-item">
 							<a href="" class="nav-link">
 								<i class="fas fa-w fa-clipboard"></i>
-								<span>Generar Presupuesto</span>
+								<span>Términos de Servicios</span>
 							</a>
 						</li>
 
@@ -153,7 +153,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a href="" class="nav-link" data-toggle="modal" data-target="#modalInfo">
+							<a href="#" class="nav-link" data-toggle="modal" data-target="#modalInfo">
 								<i class="fas fa-w fa-info"></i>
 								<span>Acerca de:</span>
 							</a>
@@ -165,7 +165,7 @@
 			</div>
 		</div> <!-- Fin del panel lateral -->
 	
-		<!--@yield('content') --> 
+		@yield('content')  
 
 	</div>
 	<div>
@@ -175,6 +175,7 @@
 
 	<!-- Ventanas Modales --> 
 	@include('layouts.modalDashboard')
+	@include('layouts.modalDashboardAdmin')
 	
 	<!-- JQuery -->
 	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>

@@ -13,9 +13,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //  return view('welcome');
+//});
 
 
 /*
@@ -88,6 +88,20 @@ Route::get('meeting/records/index', function() {
 	return view('meeting/records/index');
 });
 
-Route::get('layouts/dashboardAdmin', function() {
-	return view('layouts/dashboardAdmin');
+
+/*
+|--------------------------------------------------------------------------
+| Route Admin
+|--------------------------------------------------------------------------
+|
+| Ruta para levantar la vista del admin
+|
+*/
+
+Route::get('/admin/index', function() {
+	return view('admin/index');
+});
+
+Route::get('/admin/profiles', function() {
+	return view('admin/profiles');
 });

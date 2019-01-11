@@ -116,19 +116,19 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="" class="nav-link">
+							<a href="../rental/index" class="nav-link">
 								<i class="fas fa-w fa-truck"></i>
 								<span>Alquiler</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="" class="nav-link">
+							<a href="../diagnostic/index" class="nav-link">
 								<i class="fas fa-w fa-clipboard-check"></i>
 								<span>Diagnosticos</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="" class="nav-link">
+							<a href="../records/index" class="nav-link">
 								<i class="fas fa-w fa-microphone"></i>
 								<span>Grabaciones</span>
 							</a>
