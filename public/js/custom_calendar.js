@@ -27,6 +27,12 @@ $(document).ready(function() {
 			center: 'month,agendaWeek,agendaDay'
 		},
 
+		/*  Tienes que incluir una condicional que permita agendar el servicio correcto
+			en las paginas seleccionadas.
+
+			Puedes verificar el enlace y luego validarla con una condicional (buscar)
+		*/
+
 		/*Evento por día (Ventana Modal)*/
 		dayClick: function(date, jsEvent, view) {
 

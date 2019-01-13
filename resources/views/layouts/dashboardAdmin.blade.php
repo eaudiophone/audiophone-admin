@@ -55,7 +55,7 @@
 
 					<div class="dropdown-divider"></div>
 
-					<a href="" class="dropdown-item">
+					<a href="../admin/estadistic" class="dropdown-item">
 						<i class="fas fa-w fa-chart-line"></i>
 						<span>Estadisticas</span>
 					</a>	
@@ -146,7 +146,7 @@
 						<h6>Más información</h6>
 						
 						<li class="nav-item">
-							<a href="" class="nav-link">
+							<a href="../admin/estadistic" class="nav-link">
 								<i class="fas fa-w fa-chart-line"></i>
 								<span>Estadisticas</span>
 							</a>

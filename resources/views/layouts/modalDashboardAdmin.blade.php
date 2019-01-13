@@ -38,7 +38,8 @@ aria-hidden="true">
       <div class="modal-body">
         <p class="text-justified">
           En esta sección puedes gestionar los usuarios dentro de la aplicación. Puedes consultar la
-          informacion dentro de su perfil y otorgarles acceso a la aplicación.
+          informacion dentro de su perfil utilizando la barra de busqueda y otorgarles o revocarles 
+          el acceso. 
         </p>
       </div>
       <div class="modal-footer">
@@ -54,15 +55,15 @@ aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modal09">Estadisticas de la aplicación</h5>
+        <h5 class="modal-title" id="modal09">Estadísticas de la aplicación</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <p class="text-justified">
-          En esta sección puedes consultar las estadisticas generadas por las actividad de los
-          usuarios que solicitan los servicios de grabación, diagnostico o renta de equipos. 
+          En esta sección puedes consultar las estadísticas generadas por las actividad de los
+          usuarios que solicitan tus servicios. 
         </p>
       </div>
       <div class="modal-footer">

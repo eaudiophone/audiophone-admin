@@ -105,3 +105,7 @@ Route::get('/admin/index', function() {
 Route::get('/admin/profiles', function() {
 	return view('admin/profiles');
 });
+
+Route::get('/admin/estadistic', function() {
+	return view('admin/estadistic');
+});

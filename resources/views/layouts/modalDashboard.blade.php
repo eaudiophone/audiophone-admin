@@ -22,7 +22,7 @@ aria-hidden="true">
 					c) Los dueños no se hacen responsables del uso inadecuado del software los acuerdos	
 					legales expuestos a continuación rigen del uso del software <br><br>
 					Para mayor información del desarrollo del proyecto visite la pagina:
-					<a href="#">nombre de la pagina</a><br><br>
+					<a href="https://eaudiophonesa.000webhostapp.com">Estudios Audiophone S.A</a><br><br>
 				</p>
 					
 					<center>
@@ -176,7 +176,7 @@ aria-hidden="true">
 	</div>
 </div>
 
-<!-- Modal del calendario -->
+<!-- Modal de Prueba calendario (solo se utiliza en pruebas) -->
 <div class="modal fade" tabindex="-1" role="dialog" id="modalCalendar" aria-labelledby="modal06"
 aria-hidden="true">
  	<div class="modal-dialog" role="document">
