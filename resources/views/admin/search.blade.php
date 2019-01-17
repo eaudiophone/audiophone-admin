@@ -5,7 +5,7 @@
 			<input type="text" class="form-control" name="searchText"
 			placeholder="Buscar ..." value="">
 				<span class="input-group-btn">
-					<button class="btn btn-info" type="submit">
+					<button class="btn btn-primary" type="submit">
 						<i class="fas fa-w fa-search"></i>
 					</button>
 				</span>

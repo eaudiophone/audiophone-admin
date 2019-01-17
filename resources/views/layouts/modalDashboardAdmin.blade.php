@@ -72,3 +72,27 @@ aria-hidden="true">
     </div>
   </div>
 </div>
+
+<!-- Añadir perfiles del administrador -->
+<div class="modal fade" tab-index="-1" role="dialog" id="modalPAdministrador" aria-labelledby="modal10"
+aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal10">Nuevo Administrador</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-justified">
+          <strong>ATENCIÓN:</strong><br><br>
+          En esta sección permite incluir perfiles del administrador dentro del sistema.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

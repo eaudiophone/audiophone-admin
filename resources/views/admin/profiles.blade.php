@@ -20,7 +20,8 @@
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
 					</button>
-					<button type="button" class="btn btn-sm btn-warning">
+					<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
+					data-target="#modalPAdministrador">
 						<i class="fas fa-w fa-user"></i>
 						Nuevo Administrador
 					</button>

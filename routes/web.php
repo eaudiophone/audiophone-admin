@@ -13,11 +13,6 @@
 |
 */
 
-//Route::get('/', function () {
-  //  return view('welcome');
-//});
-
-
 /*
 |--------------------------------------------------------------------------
 | Route Login
@@ -108,4 +103,12 @@ Route::get('/admin/profiles', function() {
 
 Route::get('/admin/estadistic', function() {
 	return view('admin/estadistic');
+});
+
+Route::get('admin/show', function() {
+	return view('admin/show');
+});
+
+Route::get('admin/terms', function() {
+	return view('admin/terms');
 });
