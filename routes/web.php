@@ -109,6 +109,10 @@ Route::get('admin/show', function() {
 	return view('admin/show');
 });
 
-Route::get('admin/terms', function() {
-	return view('admin/terms');
+Route::get('admin/days', function() {
+	return view('admin/days');
+});
+
+Route::get('admin/budget', function() {
+	return view('admin/budget');
 });

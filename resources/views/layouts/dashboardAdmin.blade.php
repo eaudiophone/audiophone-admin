@@ -35,36 +35,33 @@
 				aria-expanded="false">
 					<i class="fas fa-w fa-star"></i>
 				</a>
-
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
 					<a href="index" class="dropdown-item">
 						<i class="fas fa-w fa-calendar"></i>
 						<span>Agenda</span>
 					</a>
-					<a href="profile" class="dropdown-item">
+					<a href="profiles" class="dropdown-item">
 						<i class="fas fa-w fa-user"></i>
 						<span>Usuarios</span>
 					</a>
-
-					<a href="" class="dropdown-item">
-						<i class="fas fa-w fa-clipboard"></i>
-						<span>Términos</span>
+					<a href="../admin/days" class="dropdown-item">
+						<i class="fas fa-w fa-sun"></i>
+						<span>Días de Servicios</span>
 					</a>
-					
-
+					<a href="../admin/budget" class="dropdown-item">
+						<i class="fas fa-w fa-clipboard"></i>
+						<span>Presupuesto</span>
+					</a>
 					<div class="dropdown-divider"></div>
-
 					<a href="../admin/estadistic" class="dropdown-item">
 						<i class="fas fa-w fa-chart-line"></i>
 						<span>Estadisticas</span>
 					</a>	
-
 					<a href="" class="dropdown-item" data-toggle="modal" data-target="#modalInfo">
 						<i class="fas fa-w fa-info"></i>
 						<span>Acerca de</span>
 					</a>
-
 				</div>
 			</li>
 
@@ -128,23 +125,25 @@
 								<span>Agenda de trabajo</span>
 							</a>
 						</li>
-
 						<li class="nav-item">
 							<a href="profiles" class="nav-link">
 								<i class="fas fa-w fa-user"></i>
 								<span>Usuarios</span>
 							</a>
 						</li>
-
 						<li class="nav-item">
-							<a href="" class="nav-link">
-								<i class="fas fa-w fa-clipboard"></i>
-								<span>Términos de Servicios</span>
+							<a href="../admin/days" class="nav-link">
+								<i class="fas fa-w fa-sun"></i>
+								<span>Días de Servicios</span>
 							</a>
 						</li>
-
+						<li class="nav-item">
+							<a href="../admin/budget" class="nav-link">
+								<i class="fas fa-w fa-clipboard"></i>
+								<span>Presupuesto</span>
+							</a>
+						</li>
 						<h6>Más información</h6>
-						
 						<li class="nav-item">
 							<a href="../admin/estadistic" class="nav-link">
 								<i class="fas fa-w fa-chart-line"></i>

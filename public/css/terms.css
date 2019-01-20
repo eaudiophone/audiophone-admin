@@ -1,0 +1,25 @@
+.card-header {
+
+	font-size: 20px;
+	text-align: left;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#bajar2 {
+
+	margin-top: 25px;
+}
+
+.btn-primary {
+
+	font-size: 13px;
+}
+
+@media(max-width: 576px) {
+
+	#bajar {
+
+		margin-top: 25px;
+	}
+}
