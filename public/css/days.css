@@ -4,6 +4,12 @@
 	text-align: left;
 	text-decoration: underline;
 	font-style: italic;
+	text-align: center;
+	background-color: silver;
+}
+.card-body {
+
+	text-align: center;
 }
 
 #bajar2 {
@@ -11,10 +17,6 @@
 	margin-top: 25px;
 }
 
-.btn-primary {
-
-	font-size: 13px;
-}
 
 @media(max-width: 576px) {
 

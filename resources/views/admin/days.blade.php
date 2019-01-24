@@ -2,7 +2,7 @@
 @section('title', 'Días de Servicios')
 @section('content')
 
-	<link rel="stylesheet" href="{{asset('css/terms.css')}}">
+	<link rel="stylesheet" href="{{asset('css/days.css')}}">
 	
 	<!-- Contenedor -->
 	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
@@ -42,7 +42,7 @@
 							<li class="list-group-item">Elemento4</li>
 						</ul>
 						<div class="card-body">
-							<button class="btn btn-primary" data-toggle="modal" 
+							<button class="btn btn-primary btn-sm" data-toggle="modal" 
 								data-target="#modal_D_Grabacion">
 								<i class="fas fa-w fa-edit"></i>
 								Editar D. de Grabación
@@ -52,7 +52,7 @@
 				</div>
 				<div class="col-sm-6" id="bajar">
 					<div class="card">
-						<div class="card-header">
+						<div class="card-header text-center">
 							Diagnosticos
 						</div>
 						<!-- Incluir los terminos aquí -->
@@ -63,7 +63,7 @@
 							<li class="list-group-item">Elemento4</li>
 						</ul>
 						<div class="card-body">
-							<button class="btn btn-primary" data-toggle="modal" 
+							<button class="btn btn-primary btn-sm" data-toggle="modal" 
 								data-target="#modal_D_Diagnostico">
 								<i class="fas fa-w fa-edit"></i>
 								Editar D. de Diagnosticos
@@ -86,7 +86,7 @@
 							<li class="list-group-item">Elemento4</li>
 						</ul>
 						<div class="card-body">
-							<button class="btn btn-primary"  data-toggle="modal" 
+							<button class="btn btn-primary btn-sm"  data-toggle="modal" 
 								data-target="#modal_D_Renta">
 								<i class="fas fa-w fa-edit"></i>
 								Editar D. de Alquiler
