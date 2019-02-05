@@ -18,6 +18,12 @@
 	</head>
 
 	<body>
+
+		<!-- Logo del estudio -->
+		<center>
+			<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
+		</center>
+
 		<h3 class="text-center">Registro de usuarios <br> Datos de Cuenta</h3>
 
 		<!-- Contenedor 2 -->
@@ -88,7 +94,7 @@
 
 							<div class="col-sm-6">
 								<button type="submit" class="btn btn-primary btn-block">
-									Register
+									Registrar
 								</button>
 							</div>
 
@@ -111,7 +117,7 @@
 				<a href="/" class="">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="" class="">Olvido Contraseña</a>
+				<a href="recoveryPassword" class="">Recuperar Contraseña</a>
 			</div>
 		</div>
 	</div>

@@ -40,8 +40,8 @@ Route::get('/user/recoveryPassword', function() {
 |
 */
 
-Route::get('/user/index', function() {
-	return view('user/index');
+Route::get('/user/profiles/index', function() {
+	return view('user/profiles/index');
 });
 
 Route::get('/user/createUser', function () {
@@ -115,4 +115,8 @@ Route::get('admin/days', function() {
 
 Route::get('admin/budget', function() {
 	return view('admin/budget');
+});
+
+Route::get('admin/adminProfile', function() {
+	return view('admin/adminProfile');
 });

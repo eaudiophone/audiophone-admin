@@ -38,15 +38,15 @@
 
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
-					<a href="" class="dropdown-item">
+					<a href="./../../meeting/rental/index" class="dropdown-item">
 						<i class="fas fa-w fa-truck"></i>
 						<span>Alquiler</span>
 					</a>
-					<a href="" class="dropdown-item">
+					<a href="./../../meeting/diagnostic/index" class="dropdown-item">
 						<i class="fas fa-w fa-clipboard-check"></i>
 						<span>Diagnosticos</span>
 					</a>
-					<a href="" class="dropdown-item">
+					<a href="./../../meeting/records/index" class="dropdown-item">
 						<i class="fas fa-w fa-microphone"></i>
 						<span>Grabaciones</span>
 					</a>
@@ -96,9 +96,9 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="" class="dropdown-item">Perfil</a>
+					<a href="./../../user/profiles/index" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
-					<a href="" class="dropdown-item">Salir</a>
+					<a href="/" class="dropdown-item">Salir</a>
 				</div>
 			</li>
 		</ul>
@@ -116,19 +116,19 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="../rental/index" class="nav-link">
+							<a href="../../meeting/rental/index" class="nav-link">
 								<i class="fas fa-w fa-truck"></i>
 								<span>Alquiler</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../diagnostic/index" class="nav-link">
+							<a href="../../meeting/diagnostic/index" class="nav-link">
 								<i class="fas fa-w fa-clipboard-check"></i>
 								<span>Diagnosticos</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../records/index" class="nav-link">
+							<a href="../../meeting/records/index" class="nav-link">
 								<i class="fas fa-w fa-microphone"></i>
 								<span>Grabaciones</span>
 							</a>
@@ -157,6 +157,7 @@
 
 	<!-- Ventanas Modales -->
 	@include('layouts.modalDashboard')
+	@include('layouts.modalCalendar')
 	
 	<!-- JQuery -->
 	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>

@@ -2,7 +2,7 @@
 
 <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="modal01"
 aria-hidden="true">
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="modal01">Información de la Aplicación</h5>
@@ -179,7 +179,7 @@ aria-hidden="true">
 <!-- Modal de Prueba calendario (solo se utiliza en pruebas) -->
 <div class="modal fade" tabindex="-1" role="dialog" id="modalCalendar" aria-labelledby="modal06"
 aria-hidden="true">
- 	<div class="modal-dialog" role="document">
+ 	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content">
       		<div class="modal-header">
         		<h5 class="modal-title" id="modal06">Agendar cita:</h5>
@@ -197,4 +197,6 @@ aria-hidden="true">
     </div>
   </div>
 </div>
+
+
 

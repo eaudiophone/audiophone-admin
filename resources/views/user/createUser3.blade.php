@@ -18,12 +18,13 @@
 	</head>
 
 	<body>
+		<center>
+			<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
+		</center>
+
 		<h3 class="text-center">Registro de usuarios <br> Datos de Contacto</h3>
 
 	<!-- Contenedor 3 -->
-
-	<!-- Contenedor 3 -->
-
 	<div class="container">
 		<div class="card card-register mx-auto mt-5">
 			
@@ -94,7 +95,7 @@
 
 							<div class="col-sm-6">
 								<button type="submit" class="btn btn-primary btn-block">
-									Register
+									Registrar
 								</button>
 							</div>
 
@@ -116,7 +117,7 @@
 				<a href="/" class="">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="" class="">Olvido Contraseña</a>
+				<a href="recoveryPassword" class="">Recuperar Contraseña</a>
 			</div>
 		</div>
 	</div>

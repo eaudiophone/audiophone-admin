@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head lang="es_VE">
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>Login</title>
-
 	<!-- Boostrap CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/bootstrap.min.css')}}">
 	<!-- Fontawesome -->
@@ -15,10 +12,6 @@
 			<!-- login theme -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
 	<link rel="shorcut icon" type="image/png" href="{{asset('img/Logo 01.png')}}">
-
-	<!-- Incluimos el script de AgularJS -->
-	<script type="text/javascript" src="{{asset('js/vendor/angular.min.js')}}"></script>
-
 </head>
 <body id="text-center">
 
@@ -29,7 +22,6 @@
 			<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
 		</center>
 		
-
 		<!-- Titulo -->
 		<h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
 
