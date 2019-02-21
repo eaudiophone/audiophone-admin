@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace audiophoneapp\Http\Controllers;
 
 use Illuminate\Http\Request;
 

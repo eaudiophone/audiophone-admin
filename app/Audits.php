@@ -1,17 +1,17 @@
 <?php
 
-namespace App;
+namespace audiophoneapp;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Audit extends Model
+class Audits extends Model
 {
 /*
  **********************************************
  *   Declaración Personalizada de Tabla Audit *
  **********************************************
  */
-	protected $table = 'Audit';
+	protected $table = 'Audits';
 
 /*
  ****************
@@ -22,7 +22,7 @@ class Audit extends Model
 
 	public $timestamps = false;
 
-	protected $fillable = ['User_idUser','detailsAudit', 'dateAudit', 'hourAudit'];
+	protected $fillable = ['User_idUser','detailsAudit', 'date', 'hour'];
 
 	protected $guarded = [];
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace audiophoneapp;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Account extends Model
+class Accounts extends Model
 {
     
 /*
@@ -12,7 +12,7 @@ class Account extends Model
 *   Declaración Personalizada de Tabla Account  *
 *************************************************
 */
-    protected $table = 'Account';
+    protected $table = 'Accounts';
 
 /*
 ****************
@@ -23,8 +23,6 @@ class Account extends Model
 
 	public $timestamps = false;
 
-	protected $fillable = ['User_idUser', 'email', 'password', 'verifyPassword', 'typeAccount', 'statusAccount']; 
-
-	protected $guarded = [];
-
+	protected $fillable = ['User_idUser', 'email', 'password', 
+							'typeAccount', 'state']; 
 }

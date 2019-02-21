@@ -1,4 +1,4 @@
-<!-- Modal Info -->
+<!-- Modal Dashboard Clientes -->
 
 <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="modal01"
 aria-hidden="true">

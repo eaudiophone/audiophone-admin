@@ -9,6 +9,7 @@
 
 	<!-- Boostrap CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/fullcalendar.min.css')}}">
 
 	<!-- Fontawesome -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
@@ -37,24 +38,24 @@
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
-					<a href="index" class="dropdown-item">
+					<a href="{{url('/admin/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-calendar"></i>
 						<span>Agenda</span>
 					</a>
-					<a href="profiles" class="dropdown-item">
+					<a href="{{url('/admin/profiles')}}" class="dropdown-item">
 						<i class="fas fa-w fa-user"></i>
 						<span>Usuarios</span>
 					</a>
-					<a href="../admin/days" class="dropdown-item">
+					<a href="{{url('/admin/days')}}" class="dropdown-item">
 						<i class="fas fa-w fa-sun"></i>
 						<span>Días de Servicios</span>
 					</a>
-					<a href="../admin/budget" class="dropdown-item">
+					<a href="{{url('/admin/budget')}}" class="dropdown-item">
 						<i class="fas fa-w fa-clipboard"></i>
 						<span>Presupuesto</span>
 					</a>
 					<div class="dropdown-divider"></div>
-					<a href="../admin/estadistic" class="dropdown-item">
+					<a href="{{url('/admin/estadistic')}}" class="dropdown-item">
 						<i class="fas fa-w fa-chart-line"></i>
 						<span>Estadisticas</span>
 					</a>	
@@ -100,9 +101,9 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="adminProfile" class="dropdown-item">Perfil</a>
+					<a href="{{url('/admin/adminProfile')}}" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
-					<a href="/" class="dropdown-item">Salir</a>
+					<a href="{{url('/')}}" class="dropdown-item">Salir</a>
 				</div>
 			</li>
 		</ul>
@@ -120,25 +121,25 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="index" class="nav-link">
+							<a href="{{url('/admin/index')}}" class="nav-link">
 								<i class="far fa-w fa-calendar"></i>
 								<span>Agenda de trabajo</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="profiles" class="nav-link">
+							<a href="{{url('/admin/profiles')}}" class="nav-link">
 								<i class="fas fa-w fa-user"></i>
 								<span>Usuarios</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../admin/days" class="nav-link">
+							<a href="{{url('/admin/days')}}" class="nav-link">
 								<i class="fas fa-w fa-sun"></i>
 								<span>Días de Servicios</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../admin/budget" class="nav-link">
+							<a href="{{url('/admin/budget')}}" class="nav-link">
 								<i class="fas fa-w fa-clipboard"></i>
 								<span>Presupuesto</span>
 							</a>
@@ -173,8 +174,8 @@
 	</div>
 
 	<!-- Ventanas Modales --> 
-	@include('layouts.modalDashboard')
-	@include('layouts.modalDashboardAdmin')
+	@include('layouts.modalDash')
+	@include('layouts.modalDashAdmin')
 	@include('layouts.modalCalendar')
 	
 	<!-- JQuery -->
@@ -186,7 +187,6 @@
 	<!-- fullcalendar idioma español -->
 	<script type="text/javascript" src="{{asset('js/vendor/moment.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/fullcalendar.min.js')}}"></script>
-	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/fullcalendar.min.css')}}">
 	<script type="text/javascript" src="{{asset('js/custom_calendar.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/es.js')}}"></script>	
 

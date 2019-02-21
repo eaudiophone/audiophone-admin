@@ -1,17 +1,17 @@
 <?php
 
-namespace App;
+namespace audiophoneapp;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Item extends Model
+class Items extends Model
 {
 /*
  *********************************************
  *   Declaración Personalizada de Tabla Item *
  *********************************************
  */
-	protected $table = 'Item';
+	protected $table = 'Items';
 
 /*
  ****************
@@ -22,7 +22,7 @@ class Item extends Model
 
 	public $timestamps = false;
 
-	protected $fillable = ['description', 'item', 'costUnit'];
+	protected $fillable = ['itemName', 'description', 'costUnit'];
 
 	protected $guarded = [];
 }

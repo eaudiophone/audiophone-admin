@@ -17,15 +17,9 @@
 		<link rel="shorcut icon" type="image/png" href="{{asset('img/Logo 01.png')}}">		
 
 	</head>
-	<body>
-
-	<!-- Logo del estudio -->
-	<center>
-		<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
-	</center>
-
+	<body>	
 		<h3 class="text-center">Recuperación de contraseña</h3>
-
+		
 	<!-- Contenedor 1 -->
 
 	<div class="container">

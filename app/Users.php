@@ -1,17 +1,17 @@
 <?php
 
-namespace App;
+namespace audiophoneapp;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Users extends Model
 {
 /*
  *********************************************
  *   Declaración Personalizada de Tabla User *
  *********************************************
  */
-	protected $table = 'User';
+	protected $table = 'Users';
 
 /*
  ****************
@@ -22,8 +22,7 @@ class User extends Model
 
 	public $timestamps = false;
 
-	protected $fillable = ['firstName', 'lastName', 'age', 'socialNetworks', 'address'];
+	protected $fillable = ['firstName', 'lastName', 'codePhone', 'cellPhone'];
 
 	protected $guarded = [];
-
 }

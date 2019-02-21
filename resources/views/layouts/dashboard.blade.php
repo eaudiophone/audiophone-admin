@@ -9,6 +9,7 @@
 
 	<!-- Boostrap CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/fullcalendar.min.css')}}">
 
 	<!-- Fontawesome -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
@@ -38,15 +39,15 @@
 
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
-					<a href="./../../meeting/rental/index" class="dropdown-item">
+					<a href="{{url('/meeting/rental/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-truck"></i>
 						<span>Alquiler</span>
 					</a>
-					<a href="./../../meeting/diagnostic/index" class="dropdown-item">
+					<a href="{{url('/meeting/diagnostic/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-clipboard-check"></i>
 						<span>Diagnosticos</span>
 					</a>
-					<a href="./../../meeting/records/index" class="dropdown-item">
+					<a href="{{url('/meeting/records/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-microphone"></i>
 						<span>Grabaciones</span>
 					</a>
@@ -57,7 +58,6 @@
 						<i class="fas fa-w fa-info"></i>
 						<span>Acerca de</span>
 					</a>
-
 				</div>
 			</li>
 
@@ -96,9 +96,9 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="./../../user/profiles/index" class="dropdown-item">Perfil</a>
+					<a href="{{url('/user/profiles/index')}}" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
-					<a href="/" class="dropdown-item">Salir</a>
+					<a href="{{url('/')}}" class="dropdown-item">Salir</a>
 				</div>
 			</li>
 		</ul>
@@ -116,19 +116,19 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="../../meeting/rental/index" class="nav-link">
+							<a href="{{url('/meeting/rental/index')}}" class="nav-link">
 								<i class="fas fa-w fa-truck"></i>
 								<span>Alquiler</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../../meeting/diagnostic/index" class="nav-link">
+							<a href="{{url('/meeting/diagnostic/index')}}" class="nav-link">
 								<i class="fas fa-w fa-clipboard-check"></i>
 								<span>Diagnosticos</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../../meeting/records/index" class="nav-link">
+							<a href="{{url('/meeting/records/index')}}" class="nav-link">
 								<i class="fas fa-w fa-microphone"></i>
 								<span>Grabaciones</span>
 							</a>
@@ -156,21 +156,17 @@
 	</div>
 
 	<!-- Ventanas Modales -->
-	@include('layouts.modalDashboard')
+	@include('layouts.modalDash')
 	@include('layouts.modalCalendar')
 	
 	<!-- JQuery -->
 	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>
-	
 	<!-- Bootstrap min.js -->
 	<script text="text/javascript" src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
-
 	<!-- fullcalendar idioma español -->
 	<script type="text/javascript" src="{{asset('js/vendor/moment.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/fullcalendar.min.js')}}"></script>
-	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/fullcalendar.min.css')}}">
 	<script type="text/javascript" src="{{asset('js/custom_calendar.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/es.js')}}"></script>	
-
 </body>
 </html>

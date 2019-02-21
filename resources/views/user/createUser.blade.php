@@ -16,11 +16,6 @@
 </head>
 
 <body>
-	<!-- Logo del estudio -->
-	<center>
-		<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
-	</center>	
-
 	<h3 class="text-center">Registro de usuarios <br> Datos Básicos</h3>
 
 	<!-- Contenedor 1 -->
@@ -56,7 +51,7 @@
 			<div class="card-body">
 
 				<!-- Form User  -->
-				<form>
+				<form action="" method="POST">
 					<div class="form-group">
 						<div class="form-row">
 						
@@ -64,7 +59,8 @@
 								<div class="form-label-group">
 									<label for="firstName">Nombres:</label>
 									<input type="text" id="firstName" class="form-control"
-									placeholder="nombre ..." required autofocus>
+									placeholder="nombre ..." name="firstName" maxlength="10"
+									pattern="[A-Z a-z]+" required autofocus>
 								</div>
 							</div>
 
@@ -72,7 +68,8 @@
 								<div class="form-label-group">
 									<label for="lastName">Apellidos:</label>
 									<input type="text" id="lastName" class="form-control"
-									placeholder="apellido ..." required autofocus>
+									placeholder="apellido ..." name="lastName" maxlength="10"
+									pattern="[A-Z a-z]+" required autofocus>
 								</div>
 							</div>
 						</div>
@@ -81,26 +78,20 @@
 					<div class="form-group">
 						<div class="form-row">
 							<div class="col-sm-6">
-								<label for="age">Edad:</label>
-								<input type="text" id="age" class="form-control"
-								placeholder="edad ... " required autofocus>
+								<label for="cod_phone">Codigo teléfonico:</label>
+								<select name="codePhone" id="cod_phone" class="form-control" required>
+									<option value="" selected>Seleccione ...</option>
+									<option value="58">+58 Venezuela</option>
+								</select>
 							</div>
 
 							<div class="col-sm-6">
-								<label for="socialNetworks">Redes sociales:</label>
-								<input type="text" id="socialNetworks" class="form-control" placeholder="enlace ..." autofocus>
+								<label for="telefono">Teléfono celular:</label>
+								<input type="text" id="telefono" class="form-control" placeholder="telefono ..."
+								name="cellPhone" maxlength="10" pattern="[0-9]+" required autofocus>
 							</div>
 						</div>
 					</div>
-
-					<div class="form-group">
-						<div class="form-row">
-							<label for="address">Dirección:</label>
-							<textarea class="form-control" id="address"
-							placeholder="dirección ..." required></textarea>
-						</div>
-					</div>
-
 					<div class="form-group">
 						<div class="form-row">
 
@@ -125,10 +116,10 @@
 	<div class="container">
 		<div class="row" id="center">
 			<div class="col-sm-6">
-				<a href="/" class="">Login</a>
+				<a href="{{url('/')}}">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="recoveryPassword" class="">Recuperar Contraseña</a>
+				<a href="{{url('/user/recoveryPassword')}}">Recuperar Contraseña</a>
 			</div>
 		</div>
 	</div>

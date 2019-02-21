@@ -1,28 +1,28 @@
 <?php
 
-namespace App;
+namespace audiophoneapp;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TermsRental extends Model
+class T_Rentals extends Model
 {
 /*
  *****************************************************
  *   Declaración Personalizada de Tabla TermsRental  *
  *****************************************************
  */
-	protected $table = 'TermsRental';
+	protected $table = 'T_Rentals';
 
 /*
  ****************
  *   Atributos  *
  ****************
  */
-	protected $primaryKey = 'idTermsRental';
+	protected $primaryKey = 'idTRental';
 
 	public $timestamps = false;
 
-	protected $fillable = ['quantityDayRental', 'quantityWeekRental', 'daysMeetingRental', 'hourBeginMeetingRental', 'hourFinalMeetingRental'];
+	protected $fillable = ['dayRental', 'weekRental', 'allowedDayRental'];
 
 	protected $guarded = [];
 

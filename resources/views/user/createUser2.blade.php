@@ -18,12 +18,6 @@
 	</head>
 
 	<body>
-
-		<!-- Logo del estudio -->
-		<center>
-			<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
-		</center>
-
 		<h3 class="text-center">Registro de usuarios <br> Datos de Cuenta</h3>
 
 		<!-- Contenedor 2 -->
@@ -47,7 +41,7 @@
 								<div class="progress-bar" role="progressbar" style="width: 0%" 
 								aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" id="bar">
 									<!-- Valor interno de la barra -->
-									33.3%
+									50%
 								</div>
 							</div>
 						</div>
@@ -70,12 +64,14 @@
 						<div class="form-row">
 							<div class="col-sm-6">
 								<label for="password">Contraseña:</label>
-								<input type="password" id="password" class="form-control" placeholder="contraseña ..." required autofocus>
+								<input type="password" id="password" class="form-control" placeholder="contraseña ..."
+								maxlength="15" required autofocus>
 							</div>
 
 							<div class="col-sm-6">
 								<label for="verifyPassword">Verificar Contraseña:</label>
-								<input type="password" id="verifyPassword" class="form-control" placeholder="verificar contraseña ..." required autofocus>
+								<input type="password" id="verifyPassword" class="form-control" placeholder="verificar contraseña ..." 
+								maxlength="15" required autofocus>
 							</div>
 						</div>
 					</div>
@@ -114,10 +110,10 @@
 	<div class="container">
 		<div class="row" id="center">
 			<div class="col-sm-6">
-				<a href="/" class="">Login</a>
+				<a href="{{url('/')}}" class="">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="recoveryPassword" class="">Recuperar Contraseña</a>
+				<a href="{{url('/user/recoveryPassword')}}" class="">Recuperar Contraseña</a>
 			</div>
 		</div>
 	</div>
@@ -134,10 +130,10 @@
 			var idInterval = setInterval(function() {
 
 				//aumento del 10 en el progreso
-				progreso += 33.3;
+				progreso += 50;
 				$('#bar').css('width', progreso + '%');
 
-				if (progreso == 33.3) {
+				if (progreso == 50) {
 
 					clearInterval(idInterval);
 				}

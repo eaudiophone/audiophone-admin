@@ -16,14 +16,9 @@
 <body id="text-center">
 
 	<form class="form-signin">
-
-		<!-- Logo del estudio -->
-		<center>
-			<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
-		</center>
 		
 		<!-- Titulo -->
-		<h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+		<h1 class="h3 mb-3">Audiophone S.A</h1>
 
 		<!-- formulario1 -->
 		<label for="inputEmail" class="sr-only">Email address</label>
@@ -33,7 +28,7 @@
 		<!-- Formulario2 -->
 		<label for="inputPassword" class="sr-only">Password</label>
 		<input type="password" id="inputPassword" class="form-control"
-		placeholder="contraseña" required>
+		placeholder="contraseña" maxlength="15" minlength="8" required>
 
 		<!-- Button -->
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Acceder</button>
@@ -43,19 +38,16 @@
 		<div class="links">
 			<p>
 				¿Es la primera vez? 
-				<a href="/user/createUser">Regístrese</a>
+				<a href="{{url('/user/createUser')}}">Regístrese</a>
 			</p>
 			<p>
 				¿Olvido su contraseña?
-				<a href="user/recoveryPassword">Click aqui</a>
+				<a href="{{url('/user/recoveryPassword')}}">Click aqui</a>
 			</p>
 			
 		</div>
-
 		<p class="mt-5 mb-3 text-muted text-center">&copy; Audiophone 2018</p>
-
 	</form>
-
 	<!-- JS -->
 	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>
 	<script text="text/javascript" src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
