@@ -1,10 +1,6 @@
 @extends('layouts.dashboard')
 @section('title', 'Meeting Rental')
-@section('content')
-	
-	<!-- Contenido -->
-	<div class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
-			
+@section('content')			
 		<!-- Titulo -->
 		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap 
 		align-items-center pb-2 mb-3 border-bottom">
@@ -26,5 +22,4 @@
 		<!-- incluimos el calendario -->
 		@include('layouts.calendar')
 	</div>
-		
 @endsection

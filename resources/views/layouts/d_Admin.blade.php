@@ -164,9 +164,9 @@
 				</div>
 			</div>
 		</div> <!-- Fin del panel lateral -->
-	
-		@yield('content')  
-
+		<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
+			@yield('content')  
+		</main>
 	</div>
 	<div>
 		<!-- Espaciado -->
@@ -177,6 +177,7 @@
 	@include('layouts.modalDash')
 	@include('layouts.modalDashAdmin')
 	@include('layouts.modalCalendar')
+	@include('layouts.modalBudget') 
 	
 	<!-- JQuery -->
 	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>

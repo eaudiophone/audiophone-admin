@@ -13,11 +13,16 @@
 	background-color: silver;
 }
 
-
 .btn-primary {
 
 	margin-left: 15px;
 	margin-right: 15px;
+}
+/*Formato responsive*/
+@media(max-width: 380px) {
+	.btn-danger {
+		margin-top: 10px;
+	}
 }
 
 
