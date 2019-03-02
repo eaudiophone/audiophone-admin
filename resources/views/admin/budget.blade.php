@@ -1,12 +1,7 @@
 @extends('layouts.d_Admin')
 @section('title', 'Presupuesto')
 @section('content')
-
 	<link rel="stylesheet" href="{{asset('css/budget.css')}}">
-
-	<!-- Contenido -->
-	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
-			
 		<!-- Titulo -->
 		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap 
 		align-items-center pb-2 mb-3 border-bottom">
@@ -68,7 +63,8 @@
 
 						<ul class="list-group list-group-flush">
 							<li class="list-group-item text-center">
-								<a href="" class="btn btn-success btn-sm">
+								<a href="" class="btn btn-success btn-sm" data-toggle="modal"
+								data-target="#budget03">
 									<i class="fas fa-w fa-plus"></i>
 									Nuevo
 								</a>
@@ -119,7 +115,8 @@
 
 						<ul class="list-group list-group-flush">
 							<li class="list-group-item text-center">
-								<a href="" class="btn btn-success btn-sm">
+								<a href="" class="btn btn-success btn-sm" data-toggle="modal"
+								data-target="#budget02">
 									<i class="fas fa-w fa-plus"></i>
 									Nuevo
 								</a>
@@ -170,7 +167,8 @@
 
 						<ul class="list-group list-group-flush">
 							<li class="list-group-item text-center">
-								<a href="" class="btn btn-success btn-sm">
+								<a href="" class="btn btn-success btn-sm" data-toggle="modal"
+								data-target="#budget01">
 									<i class="fas fa-w fa-plus"></i>
 									Nuevo
 								</a>

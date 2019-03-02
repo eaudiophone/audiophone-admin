@@ -45,14 +45,6 @@
 									<td>apellido</td>
 								</tr>
 								<tr>
-									<th>Dirección:</th>
-									<td>dirección</td>
-								</tr>
-								<tr>
-									<th>Redes Sociales:</th>
-									<td>red</td>
-								</tr>
-								<tr>
 									<th>Email:</th>
 									<td>email</td>
 								</tr>
@@ -63,14 +55,6 @@
 								<tr>
 									<th>Teléfono Celular:</th>
 									<td>teléfono celular</td>
-								</tr>
-								<tr>
-									<th>Teléfono Local:</th>
-									<td>teléfono local</td>
-								</tr>
-								<tr>
-									<th>País:</th>
-									<td>país</td>
 								</tr>
 							</tbody>
 						</table>

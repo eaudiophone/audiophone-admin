@@ -4,9 +4,6 @@
 
 	<!-- Contenido -->
 	<link rel="stylesheet" type="text/css" href="{{asset('css/user.css')}}">
-
-	<!-- Contenido -->
-	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
 			
 		<!-- Titulo -->
 		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap 
