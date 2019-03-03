@@ -33,7 +33,7 @@ Route::get('/user/recoveryPassword', function() {
 
 /*
 |--------------------------------------------------------------------------
-| Route User
+| Route User-Vistas
 |--------------------------------------------------------------------------
 |
 | Ruta del modulo del Usuario
@@ -48,13 +48,27 @@ Route::get('/user/createUser', function () {
     return view('user/createUser');
 });
 
-Route::get('/user/createUser2', function () {
-    return view('user/createUser2');
+Route::get('/user/createAccount', function () {
+    return view('user/createAccount');
 });
 
-Route::get('/user/createUser3', function () {
-    return view('user/createUser3');
-});
+
+/*
+|--------------------------------------------------------------------------
+| Route Users-Controllers
+|--------------------------------------------------------------------------
+|
+| Controladores del modulo Usuarios
+|
+*/
+
+Route::resource('/user/createUser', 'CreateUsersController@create' )->name('create.users');
+
+Route::resource('/user/');
+
+Route::resource('/user/createAccount', 'CreateAccountsController@create' )->name('create.accounts');
+
+
 
 /*
 |--------------------------------------------------------------------------
