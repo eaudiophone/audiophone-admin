@@ -27,7 +27,7 @@
 		</div> 
 
 		<!-- Colocar aqui el buscador de usuarios: -->
-		@include('admin.search')
+		@include('admins.search')
 
 		<!-- tabla de datos -->
 		<table class="table table-striped">

@@ -86,8 +86,8 @@
 							</div>
 
 							<div class="col-sm-6">
-								<label for="telefono">Teléfono celular:</label>
-								<input type="text" id="telefono" class="form-control" placeholder="telefono ..."
+								<label for="cellPhone">Teléfono celular:</label>
+								<input type="text" id="cellPhone" class="form-control" placeholder="telefono ..."
 								name="cellPhone" maxlength="10" pattern="[0-9]+" required autofocus>
 							</div>
 						</div>
@@ -119,7 +119,7 @@
 				<a href="{{url('/')}}">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="{{url('/user/recoveryPassword')}}">Recuperar Contraseña</a>
+				<a href="{{url('/users/recoveryPasswords')}}">Recuperar Contraseña</a>
 			</div>
 		</div>
 	</div>

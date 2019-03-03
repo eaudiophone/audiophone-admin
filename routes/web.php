@@ -23,11 +23,11 @@
 */
 
 Route::get('/', function () {
-    return view('user/login');
+    return view('users/login');
 });
 
-Route::get('/user/recoveryPassword', function() {
-	return view('user/recoveryPassword');
+Route::get('/users/recoveryPasswords', function() {
+	return view('users/recoveryPasswords');
 });
 
 
@@ -40,34 +40,17 @@ Route::get('/user/recoveryPassword', function() {
 |
 */
 
-Route::get('/user/profiles/index', function() {
-	return view('user/profiles/index');
+Route::get('/users/profiles/index', function() {
+	return view('users/profiles/index');
 });
 
-Route::get('/user/createUser', function () {
-    return view('user/createUser');
+Route::get('/users/createUsers', function () {
+    return view('users/createUsers');
 });
 
-Route::get('/user/createAccount', function () {
-    return view('user/createAccount');
+Route::get('/users/createAccounts', function () {
+    return view('users/createAccounts');
 });
-
-
-/*
-|--------------------------------------------------------------------------
-| Route Users-Controllers
-|--------------------------------------------------------------------------
-|
-| Controladores del modulo Usuarios
-|
-*/
-
-Route::resource('/user/createUser', 'CreateUsersController@create' )->name('create.users');
-
-Route::resource('/user/');
-
-Route::resource('/user/createAccount', 'CreateAccountsController@create' )->name('create.accounts');
-
 
 
 /*
@@ -81,20 +64,20 @@ Route::resource('/user/createAccount', 'CreateAccountsController@create' )->name
 
 //Modulo de renta 
 
-Route::get('meeting/rental/index', function() {
-	return view('meeting/rental/index');
+Route::get('meetings/rentals/index', function() {
+	return view('meetings/rentals/index');
 });
 
 //Modulo de diagnostico 
 
-Route::get('meeting/diagnostic/index', function() {
-	return view('meeting/diagnostic/index');
+Route::get('meetings/diagnostics/index', function() {
+	return view('meetings/diagnostics/index');
 });
 
 //Modulo de grabacion
 
-Route::get('meeting/records/index', function() {
-	return view('meeting/records/index');
+Route::get('meetings/records/index', function() {
+	return view('meetings/records/index');
 });
 
 
@@ -107,30 +90,30 @@ Route::get('meeting/records/index', function() {
 |
 */
 
-Route::get('/admin/index', function() {
-	return view('admin/index');
+Route::get('/admins/index', function() {
+	return view('admins/index');
 });
 
-Route::get('/admin/profiles', function() {
-	return view('admin/profiles');
+Route::get('/admins/profiles', function() {
+	return view('admins/profiles');
 });
 
-Route::get('/admin/estadistic', function() {
-	return view('admin/estadistic');
+Route::get('/admins/estadistics', function() {
+	return view('admins/estadistics');
 });
 
-Route::get('admin/show', function() {
-	return view('admin/show');
+Route::get('admins/shows', function() {
+	return view('admins/shows');
 });
 
-Route::get('admin/days', function() {
-	return view('admin/days');
+Route::get('admins/days', function() {
+	return view('admins/days');
 });
 
-Route::get('admin/budget', function() {
-	return view('admin/budget');
+Route::get('admins/budgets', function() {
+	return view('admins/budgets');
 });
 
-Route::get('admin/adminProfile', function() {
-	return view('admin/adminProfile');
+Route::get('admins/adminProfiles', function() {
+	return view('admins/adminProfiles');
 });

@@ -62,15 +62,9 @@
 
 					<div class="form-group">
 						<div class="form-row">
-							<div class="col-sm-6">
+							<div class="col-sm-12">
 								<label for="password">Contraseña:</label>
 								<input type="password" id="password" class="form-control" placeholder="contraseña ..."
-								maxlength="15" required autofocus>
-							</div>
-
-							<div class="col-sm-6">
-								<label for="verifyPassword">Verificar Contraseña:</label>
-								<input type="password" id="verifyPassword" class="form-control" placeholder="verificar contraseña ..." 
 								maxlength="15" required autofocus>
 							</div>
 						</div>
@@ -79,7 +73,7 @@
 					<!-- Clave foránea -->
 					<div class="form-group">
 						<div class="form-row">
-							<input type="hidden" class="form-control" id="User_idUser"
+							<input type="hidden" class="form-control" name="User_idUser"
 							value="" placeholder="User_idUser" required>
 						</div>
 					</div>
@@ -113,7 +107,7 @@
 				<a href="{{url('/')}}" class="">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="{{url('/user/recoveryPassword')}}" class="">Recuperar Contraseña</a>
+				<a href="{{url('/users/recoveryPasswords')}}" class="">Recuperar Contraseña</a>
 			</div>
 		</div>
 	</div>

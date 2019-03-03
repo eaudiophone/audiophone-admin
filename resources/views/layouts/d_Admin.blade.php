@@ -38,24 +38,24 @@
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
-					<a href="{{url('/admin/index')}}" class="dropdown-item">
+					<a href="{{url('/admins/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-calendar"></i>
 						<span>Agenda</span>
 					</a>
-					<a href="{{url('/admin/profiles')}}" class="dropdown-item">
+					<a href="{{url('/admins/profiles')}}" class="dropdown-item">
 						<i class="fas fa-w fa-user"></i>
 						<span>Usuarios</span>
 					</a>
-					<a href="{{url('/admin/days')}}" class="dropdown-item">
+					<a href="{{url('/admins/days')}}" class="dropdown-item">
 						<i class="fas fa-w fa-sun"></i>
 						<span>Días de Servicios</span>
 					</a>
-					<a href="{{url('/admin/budget')}}" class="dropdown-item">
+					<a href="{{url('/admins/budgets')}}" class="dropdown-item">
 						<i class="fas fa-w fa-clipboard"></i>
 						<span>Presupuesto</span>
 					</a>
 					<div class="dropdown-divider"></div>
-					<a href="{{url('/admin/estadistic')}}" class="dropdown-item">
+					<a href="{{url('/admins/estadistics')}}" class="dropdown-item">
 						<i class="fas fa-w fa-chart-line"></i>
 						<span>Estadisticas</span>
 					</a>	
@@ -101,7 +101,7 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="{{url('/admin/adminProfile')}}" class="dropdown-item">Perfil</a>
+					<a href="{{url('/admins/adminProfiles')}}" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
 					<a href="{{url('/')}}" class="dropdown-item">Salir</a>
 				</div>
@@ -121,32 +121,32 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="{{url('/admin/index')}}" class="nav-link">
+							<a href="{{url('/admins/index')}}" class="nav-link">
 								<i class="far fa-w fa-calendar"></i>
 								<span>Agenda de trabajo</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{url('/admin/profiles')}}" class="nav-link">
+							<a href="{{url('/admins/profiles')}}" class="nav-link">
 								<i class="fas fa-w fa-user"></i>
 								<span>Usuarios</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{url('/admin/days')}}" class="nav-link">
+							<a href="{{url('/admins/days')}}" class="nav-link">
 								<i class="fas fa-w fa-sun"></i>
 								<span>Días de Servicios</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{url('/admin/budget')}}" class="nav-link">
+							<a href="{{url('/admins/budgets')}}" class="nav-link">
 								<i class="fas fa-w fa-clipboard"></i>
 								<span>Presupuesto</span>
 							</a>
 						</li>
 						<h6>Más información</h6>
 						<li class="nav-item">
-							<a href="../admin/estadistic" class="nav-link">
+							<a href="../admins/estadistics" class="nav-link">
 								<i class="fas fa-w fa-chart-line"></i>
 								<span>Estadisticas</span>
 							</a>
@@ -188,7 +188,7 @@
 	<!-- fullcalendar idioma español -->
 	<script type="text/javascript" src="{{asset('js/vendor/moment.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/fullcalendar.min.js')}}"></script>
-	<script type="text/javascript" src="{{asset('js/custom_calendar.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/Calendar.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/es.js')}}"></script>	
 
 </body>
