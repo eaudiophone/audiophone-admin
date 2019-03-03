@@ -38,11 +38,11 @@
 		<div class="links">
 			<p>
 				¿Es la primera vez? 
-				<a href="{{url('/user/createUser')}}">Regístrese</a>
+				<a href="{{url('/users/createUsers')}}">Regístrese</a>
 			</p>
 			<p>
 				¿Olvido su contraseña?
-				<a href="{{url('/user/recoveryPassword')}}">Click aqui</a>
+				<a href="{{url('/users/recoveryPasswords')}}">Click aqui</a>
 			</p>
 			
 		</div>

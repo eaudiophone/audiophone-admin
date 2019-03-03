@@ -39,15 +39,15 @@
 
 				<div class="dropdown-menu dropdown-menu-right" 
 				aria-labelledby="servicesDropdown">
-					<a href="{{url('/meeting/rental/index')}}" class="dropdown-item">
+					<a href="{{url('/meetings/rentals/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-truck"></i>
 						<span>Alquiler</span>
 					</a>
-					<a href="{{url('/meeting/diagnostic/index')}}" class="dropdown-item">
+					<a href="{{url('/meetings/diagnostics/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-clipboard-check"></i>
 						<span>Diagnosticos</span>
 					</a>
-					<a href="{{url('/meeting/records/index')}}" class="dropdown-item">
+					<a href="{{url('/meetings/records/index')}}" class="dropdown-item">
 						<i class="fas fa-w fa-microphone"></i>
 						<span>Grabaciones</span>
 					</a>
@@ -96,7 +96,7 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="{{url('/user/profiles/index')}}" class="dropdown-item">Perfil</a>
+					<a href="{{url('/users/profiles/index')}}" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
 					<a href="{{url('/')}}" class="dropdown-item">Salir</a>
 				</div>
@@ -116,19 +116,19 @@
 
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a href="{{url('/meeting/rental/index')}}" class="nav-link">
+							<a href="{{url('/meetings/rentals/index')}}" class="nav-link">
 								<i class="fas fa-w fa-truck"></i>
 								<span>Alquiler</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{url('/meeting/diagnostic/index')}}" class="nav-link">
+							<a href="{{url('/meetings/diagnostics/index')}}" class="nav-link">
 								<i class="fas fa-w fa-clipboard-check"></i>
 								<span>Diagnosticos</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{url('/meeting/records/index')}}" class="nav-link">
+							<a href="{{url('/meetings/records/index')}}" class="nav-link">
 								<i class="fas fa-w fa-microphone"></i>
 								<span>Grabaciones</span>
 							</a>
@@ -166,7 +166,9 @@
 	<!-- fullcalendar idioma español -->
 	<script type="text/javascript" src="{{asset('js/vendor/moment.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/fullcalendar.min.js')}}"></script>
-	<script type="text/javascript" src="{{asset('js/custom_calendar.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/Calendar.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/vendor/es.js')}}"></script>	
+	<!-- funciones manuales personalizadas -->
+	<script type="text/javascript" src="{{asset('js/forms.js')}}"></script>
 </body>
 </html>

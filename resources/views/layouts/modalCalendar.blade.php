@@ -10,7 +10,7 @@ aria-hidden="true">
               </button>
           </div>
         <div class="modal-body">
-          <form action="" method="post">
+          <form action="" method="post" name="meetingDiagnostic">
               <div class="form-group">
                 <div class="form-row">
                   <div class="col-md-6 col-sm-12">
@@ -19,7 +19,8 @@ aria-hidden="true">
                  </div>
                  <div class="col-md-6 col-sm-12">
                    <label for="appointmentDate">Fecha evento:</label>
-                    <input type="date" id="appointmentDate" name="appointmentDate" class="form-control" disabled>
+                    <input type="date" id="appointmentDate" name="appointmentDate" class="form-control"  
+                    disabled>
                   </div>
                   <div class="col-md-6 col-sm-12">
                     <label for="finalHour">Hora de Finalización:</label>
@@ -54,7 +55,7 @@ aria-hidden="true">
           </div>
         <div class="modal-body">
           <!-- Agregar calendario -->
-          <form action="" method="post">
+          <form action="" method="post" name="meetingRental">
             <div class="form-group">
               <div class="form-row">
                 <div class="col-md-6 col-sm-12">
@@ -103,7 +104,7 @@ aria-hidden="true">
               </button>
           </div>
         <div class="modal-body">
-        <form action="" method="post">
+        <form action="" method="post" name="meetingRecords">
             <div class="form-group">
               <div class="form-row">
                 <div class="col-md-6 col-sm-12">
