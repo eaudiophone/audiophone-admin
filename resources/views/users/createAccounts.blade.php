@@ -55,7 +55,7 @@
 					<div class="form-group">
 						<div class="form-row">
 							<label for="email">Correo Electrónico:</label>
-							<input type="email" id="email" class="form-control"
+							<input type="email" id="email" name="email" class="form-control"
 							placeholder="correo electrónico ..." required autofocus>
 						</div>
 					</div>
@@ -64,7 +64,7 @@
 						<div class="form-row">
 							<div class="col-sm-12">
 								<label for="password">Contraseña:</label>
-								<input type="password" id="password" class="form-control" placeholder="contraseña ..."
+								<input type="password" id="password" class="form-control" placeholder="contraseña ..." name="password"
 								maxlength="15" required autofocus>
 							</div>
 						</div>

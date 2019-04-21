@@ -17,10 +17,10 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
     	public function testBasicTest(){
 
-    	$response = $this->get('/');
+    	    $response = $this->get('/'); //aca se coloca la ruta que esta en el web
 
-        $response->assertStatus(200);
-    	
+            $response->assertStatus(200);
+
     	}
 
     }

@@ -79,7 +79,7 @@
 						<div class="form-row">
 							<div class="col-sm-6">
 								<label for="cod_phone">Codigo teléfonico:</label>
-								<select name="codePhone" id="cod_phone" class="form-control" required>
+								<select name="codePhone" id="codePhone" class="form-control" required>
 									<option value="" selected>Seleccione ...</option>
 									<option value="58">+58 Venezuela</option>
 								</select>

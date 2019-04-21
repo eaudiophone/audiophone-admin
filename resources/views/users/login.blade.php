@@ -22,12 +22,12 @@
 
 		<!-- formulario1 -->
 		<label for="inputEmail" class="sr-only">Email address</label>
-		<input type="email" id="inmputEmail" class="form-control" 
+		<input type="email" id="inmputEmail" name="email" class="form-control" 
 		placeholder="correo electronico" required autofocus>
 
 		<!-- Formulario2 -->
 		<label for="inputPassword" class="sr-only">Password</label>
-		<input type="password" id="inputPassword" class="form-control"
+		<input type="password" id="inputPassword" name="password" class="form-control"
 		placeholder="contraseña" maxlength="15" minlength="8" required>
 
 		<!-- Button -->
