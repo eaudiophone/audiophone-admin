@@ -92,11 +92,11 @@ class UsersController extends Controller
 	
 				]);
 	
-				return redirect(route('users.profiles.index')->with('success','Datos Personales Actualizados.')); 
+			    return redirect(route('users.profiles.index')->with('success','Datos Personales Actualizados.')); 
 			
 			}else{
 
-				return redirect(route('users.createAccounts')->withErrors($dataUser)->withInput());
+				return redirect(route('users.profiles.index')->withErrors($dataUser)->withInput());
 			}
 		
 		}else{
@@ -120,9 +120,7 @@ class UsersController extends Controller
 			return "Usuario no Econtrado.";	
 
 		}
-
-	}
-
-
+	} 
 }
 
+                                                                                                                                                                                                                              

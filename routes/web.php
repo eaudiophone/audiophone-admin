@@ -29,9 +29,9 @@
 	
 	});
 
-	Route::get('users/createAccounts', function(){
+	Route::get('users/profiles/index', function(){
 		
-		return view('users.createAccounts');
+		return view('users.profiles.index');
 	
 	});
 
