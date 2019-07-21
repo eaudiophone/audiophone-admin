@@ -7,6 +7,7 @@
 |
 */
 
+
 /*
 |--------------------------------------------------------------------------
 | Route Login
@@ -16,7 +17,7 @@
 |
 */
 
-	Route::get('login', function(){
+	/*Route::get('login', function(){
 		
 		return view('users.login');
 	
@@ -44,7 +45,12 @@
 |
 */
 
-Route::resource('users', 'UsersController');
+Route::get('welcome', 'UsersController@index')->name('welcome');
+
+//Rutas para el proceso de crear usuarios:
+
+Route::get('createUsers/new', 'UsersController@createUsers')->name('usernew');
+Route::post('createUsers/create', 'UsersController@storeUsers')->name('usercreate');
 
 
 /*
@@ -56,7 +62,7 @@ Route::resource('users', 'UsersController');
 |
 */
 
-Route::resource('accounts', 'AccountsController');
+
 
 
 /*
@@ -70,7 +76,7 @@ Route::resource('accounts', 'AccountsController');
 |
 */
 
-Route::resource('audits', 'AuditsController');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -88,7 +94,7 @@ Route::resource('audits', 'AuditsController');
 | Rutas para MeetingsDiagnostic
 |----------------------------------------------------------------------------
 */      
-
+/*
 Route::get('meetings/diagnostics/create', 'MeetingsController@createMeetings')->name('crearDiagnostico');
 
 Route::post('meetings/diagnostics/store', 'MeetingsController@storeMeetings')->name('almacenarDiagnostico');
@@ -105,7 +111,7 @@ Route::delete('meetings/diagnostics/delete/{idMeeting}', 'MeetingsController@del
 |----------------------------------------------------------------------------
 */
 
-Route::get('meetings/records/create', 'MeetingsController@createMeetings')->name('crearDiagnostico');
+/*Route::get('meetings/records/create', 'MeetingsController@createMeetings')->name('crearDiagnostico');
 
 Route::post('meetings/records/store', 'MeetingsController@storeMeetings')->name('almacenarDiagnostico');
 
@@ -121,7 +127,7 @@ Route::delete('/meetings/records/delete/{idMeeting}', 'MeetingsController@delete
 |----------------------------------------------------------------------------
 */
 
-Route::get('meetings/rentals/create', 'MeetingsController@createMeetings')->name('crearDiagnostico');
+/*Route::get('meetings/rentals/create', 'MeetingsController@createMeetings')->name('crearDiagnostico');
 
 Route::post('meetings/rentals/store', 'MeetingsController@storeMeetings')->name('almacenarDiagnostico');
 
@@ -142,7 +148,7 @@ Route::delete('meetings/rentals/delete/{idMeeting}', 'MeetingsController@deleteM
 |
 */
 
-Route::resource('tdiagnostics', 'TDiagnosticController');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -153,7 +159,7 @@ Route::resource('tdiagnostics', 'TDiagnosticController');
 |
 */
 
-Route::resource('trecordings', 'TRecordingsController');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -164,7 +170,7 @@ Route::resource('trecordings', 'TRecordingsController');
 |
 */
 
-Route::resource('trentals', 'TDiagnostController');
+
 
 
 /*
@@ -176,7 +182,6 @@ Route::resource('trentals', 'TDiagnostController');
 |
 */
 
-Route::resource('items', 'ItemsController');
 
 
 /*
@@ -188,7 +193,7 @@ Route::resource('items', 'ItemsController');
 |
 */
 
-Route::resource('useritems', 'UserItemsController');
+
 
 
 

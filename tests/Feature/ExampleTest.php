@@ -17,7 +17,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
     	public function testBasicTest(){
 
-    	    $response = $this->get('/'); //aca se coloca la ruta que esta en el web
+    	    $response = $this->get('welcome'); //aca se coloca la ruta que esta en el web
 
             $response->assertStatus(200);
 

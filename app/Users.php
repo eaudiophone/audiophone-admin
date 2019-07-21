@@ -8,7 +8,7 @@ class Users extends Model
 {
 /*
  *********************************************
- *   Declaración Personalizada de Tabla User *
+ *   Declaración Personalizada de Tabla Users *
  *********************************************
  */
 	protected $table = 'Users';

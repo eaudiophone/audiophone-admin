@@ -23,6 +23,5 @@ class Accounts extends Model
 
 	public $timestamps = false;
 
-	protected $fillable = ['User_idUser', 'email', 'password', 
-							'typeAccount', 'state']; 
+	protected $fillable = ['User_idUser', 'email', 'password', 'typeAccount', 'state']; 
 }

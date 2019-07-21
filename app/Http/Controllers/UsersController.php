@@ -3,8 +3,9 @@
 namespace audiophoneapp\Http\Controllers;
 
 use Illuminate\Http\Request;
-use audiophoneapp\app\Users;
-use audiophoneapp\app\Http\Requests\UsersRequest; 
+use Illuminate\Support\MessageBag; 
+use audiophoneapp\Users;
+use audiophoneapp\Http\Requests\UsersRequest; 
 
 class UsersController extends Controller
 {
@@ -20,12 +21,29 @@ class UsersController extends Controller
 		return view('users.createUsers');
 
 	}
-
 	
  	public function storeUsers(UsersRequest $request){
 
-		
- 		$dataUser = request()->all();
+		$dataUser = request()->all();
+
+		Users::create([
+		   
+   	 	   'firstName' => $dataUser['firstName'],
+           'lastName'  => $dataUser['lastName'],
+           'codePhone' => $dataUser['codePhone'],
+           'cellPhone' => $dataUser['cellPhone']
+
+		]);
+
+		foreach ($errors->all() as $message){
+
+			echo '<p>' . $message . '</p>';
+
+		}
+
+	}
+
+ 		/*$dataUser = request()->all();
 
 		Users::create([
 
@@ -47,10 +65,10 @@ class UsersController extends Controller
 			return redirect(route('users.createUsers')->withErrors($dataUser)->withInput($dataUser));
 		
 		}
-	}
+	} */
 
 
-	public function consultUsers($idUser){
+	/*public function consultUsers($idUser){
 
 	 	return view('users.profiles.index', ['idUser' => Users::findOrFail($idUser)]);
 	
@@ -73,7 +91,7 @@ class UsersController extends Controller
 
 	}
 
-	public function modifyUsers(UsersRequest $request, $idUser){
+	public function modifyUsers(almacenarUsers $request, $idUser){
 
 		$idUser = User::find($idUser);
 
@@ -120,7 +138,7 @@ class UsersController extends Controller
 			return "Usuario no Econtrado.";	
 
 		}
-	} 
+	} */
 }
 
                                                                                                                                                                                                                               

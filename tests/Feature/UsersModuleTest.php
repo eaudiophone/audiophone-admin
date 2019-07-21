@@ -5,56 +5,53 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+//use audiophoneapp\app\Users;
 
 class UsersModuleTest extends TestCase
 {
-    /**
-     * 
-     * @test
-     *
+    
+    /** 
+     *@test
      */
 
-    //para hacer pruebas de asserciones HTTP es necesario tener bien declaradas las rutas en web.php
+ 
+    function load_a_new_user_form(){
 
-    /*function load_form_createUsers(){
 
-        $this->get('/')->assertStatus(200);
+      $this->get('createUsers/new')
+      ->assertStatus(200);
 
-    }*/
+      
+    }
+
+    /** 
+     *@test
+     */
 
  
     function create_a_new_user(){
 
+      $this->withoutExceptionHandling();
 
-    	//$this->get('/')->assertStatus(200);
-
-    	//$this->withoutExceptionHandling();
-
-    	
-
-    	$this->post('users/createUsers', [
+     	$this->post('createUsers/create', [
 
     		'firstName' => 'Alfonso',
     		'lastName' => 'Martinez',
-   			'codePhone' => 58,
-   			'cellPhone' => 4264042672
+   			'codePhone' => '58',
+   			'cellPhone' => '4264042672'
 
     	]);
 
-
-    	$this->assertDatabaseHas('Users', [
-
-   			'firstName' => 'Alfonso',
-   			'lastName' => 'Martinez',
-   			'codePhone' => 58,
-   			'cellPhone' => 4264042672
-
-    	]);
-
-
-    	$this->assertRedirect('users/createAccounts')->assertStatus(200);
-    	 // ->assertSee('Datos Personales Registrados');
     	
+      $this->assertDatabaseHas('Users', [
+
+        'firstName' => 'Alfonso',
+        'lastName' => 'Martinez',
+        'codePhone' => '58',
+        'cellPhone' => '4264042672'        
+
+        ]);
+
     }
 }
 

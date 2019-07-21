@@ -50,8 +50,17 @@
 
 			<div class="card-body">
 
+					
+			
+				@foreach ($errors->all() as $error)
+				
+					<p>{{ $error }}</p>
+				
+				@endforeach
+				 <!--con esto probamos capturar el funcionamiento del formrequest-->
 				<!-- Form User  -->
-				<form action="" method="POST">
+				<form action="{{url('createUsers/create')}}" method="POST">
+					<!--{!! csrf_field() !!}-->					
 					<div class="form-group">
 						<div class="form-row">
 						
@@ -60,7 +69,7 @@
 									<label for="firstName">Nombres:</label>
 									<input type="text" id="firstName" class="form-control"
 									placeholder="nombre ..." name="firstName" maxlength="10"
-									pattern="[A-Z a-z]+" required autofocus>
+									pattern="[A-Z a-z]+" autofocus>
 								</div>
 							</div>
 
@@ -69,7 +78,7 @@
 									<label for="lastName">Apellidos:</label>
 									<input type="text" id="lastName" class="form-control"
 									placeholder="apellido ..." name="lastName" maxlength="10"
-									pattern="[A-Z a-z]+" required autofocus>
+									pattern="[A-Z a-z]+" autofocus>
 								</div>
 							</div>
 						</div>
@@ -79,7 +88,7 @@
 						<div class="form-row">
 							<div class="col-sm-6">
 								<label for="cod_phone">Codigo teléfonico:</label>
-								<select name="codePhone" id="codePhone" class="form-control" required>
+								<select name="codePhone" id="codePhone" class="form-control">
 									<option value="" selected>Seleccione ...</option>
 									<option value="58">+58 Venezuela</option>
 								</select>
@@ -88,7 +97,7 @@
 							<div class="col-sm-6">
 								<label for="cellPhone">Teléfono celular:</label>
 								<input type="text" id="cellPhone" class="form-control" placeholder="telefono ..."
-								name="cellPhone" maxlength="10" pattern="[0-9]+" required autofocus>
+								name="cellPhone" maxlength="10" pattern="[0-9]+" autofocus>
 							</div>
 						</div>
 					</div>
