@@ -25,12 +25,24 @@ class UsersRequest extends FormRequest
     public function rules(){
 
         return [
-            
+          
             'firstName' => 'required|string|min:1|max:10',
             'lastName' =>  'required|string|min:1|max:10',
             'codePhone' => 'required|numeric|min:1|max:2',
             'cellPhone' => 'required|numeric|min:1|max:10'
 
+        ];
+    }
+
+    public function messages(){
+
+        return [
+
+            'firstName.required.string.min:1.max:10' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres alfabéticos',
+            'lastName.required.string.min:1.max:10' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres alfabéticos',
+            'codePhone.required.numeric.min:1.max:2' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 2 caracteres numéricos',
+            'cellPhone.required.numeric.min:1.max:10' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres numéricos'
+    
         ];
     }
     

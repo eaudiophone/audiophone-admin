@@ -52,11 +52,19 @@
 
 					
 			
+				@if($errors->any())
+
+				<ul>
 				@foreach ($errors->all() as $error)
 				
-					<p>{{ $error }}</p>
+					<li>{{ $error }}</li>
 				
 				@endforeach
+				</ul>
+
+				@endif
+
+
 				 <!--con esto probamos capturar el funcionamiento del formrequest-->
 				<!-- Form User  -->
 				<form action="{{url('createUsers/create')}}" method="POST">
@@ -69,7 +77,7 @@
 									<label for="firstName">Nombres:</label>
 									<input type="text" id="firstName" class="form-control"
 									placeholder="nombre ..." name="firstName" maxlength="10"
-									pattern="[A-Z a-z]+" autofocus>
+									pattern="[A-Z a-z]+" autofocus value="{{ old('firstName') }}">
 								</div>
 							</div>
 

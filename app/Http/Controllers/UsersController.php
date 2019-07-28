@@ -2,8 +2,7 @@
 
 namespace audiophoneapp\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\MessageBag; 
+use Illuminate\Http\Request; 
 use audiophoneapp\Users;
 use audiophoneapp\Http\Requests\UsersRequest; 
 
@@ -22,9 +21,44 @@ class UsersController extends Controller
 
 	}
 	
- 	public function storeUsers(UsersRequest $request){
+ 	public function storeUsers(){//UsersRequest $request){
 
-		$dataUser = request()->all();
+
+
+		$dataUser = request()->validate([
+
+			'firstName' => 'required',
+			'lastName' => 'required',
+			'codePhone' => 'required',
+			'cellPhone' => 'required'
+		], [
+
+			'firstName.required' => 'El Nombre es obligatorio',
+			'lastName.required' => 'El Apellido es obligatorio',
+			'codePhone.required' => 'El Códido de país es obligatorio',
+			'cellPhone.required' => 'El Nro. Celular es obligatorio'
+
+		])/*->all()*/;
+
+		//return redirect(route('usernew'))->withInput()->withErrors($dataUser); //laravel envía los errores automaticamente a la vista por medio de la variable errors		
+
+
+		/*
+
+			Si nosotros usamos el metodo from() en los test no hace falta colocar un return despues del validate.
+
+		if(empty($dataUser['firstName'])){
+
+			return redirect(route('usernew'))->withErrors([
+
+				'firstName' => 'El Nombre es obligatorio'		
+
+				]);
+		
+		}
+
+		/*	return redirect(route('users.createUsers')->withErrors($dataUser));//->withInput($dataUser));	
+		}else{*/	
 
 		Users::create([
 		   
@@ -35,24 +69,13 @@ class UsersController extends Controller
 
 		]);
 
-		foreach ($errors->all() as $message){
+		//return redirect(route('users.createUsers')->withErrors($dataUser));
 
-			echo '<p>' . $message . '</p>';
-
-		}
-
+		//}
 	}
 
- 		/*$dataUser = request()->all();
 
-		Users::create([
-
-		   'firstName' => $dataUser['firstName'],
-           'lastName'  => $dataUser['lastName'],
-           'codePhone' => $dataUser['codePhone'],
-           'cellPhone' => $dataUser['cellPhone'] 
-
-		]);
+ 		/*
 
 		$idUser = Users::find($idUser);	
 
