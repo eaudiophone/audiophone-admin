@@ -7,6 +7,7 @@
 |
 */
 
+Route::get('welcome', 'UsersController@index')->name('welcome');
 
 /*
 |--------------------------------------------------------------------------
@@ -45,9 +46,6 @@
 |
 */
 
-Route::get('welcome', 'UsersController@index')->name('welcome');
-
-//Rutas para el proceso de crear usuarios:
 
 Route::get('createUsers/new', 'UsersController@createUsers')->name('usernew');
 Route::post('createUsers/create', 'UsersController@storeUsers')->name('usercreate');
@@ -62,8 +60,8 @@ Route::post('createUsers/create', 'UsersController@storeUsers')->name('usercreat
 |
 */
 
-
-
+Route::get('createAccounts/new', 'AccountsController@createAccounts')->name('accountnew');
+//Route::post('createUsers/create', 'AccountsController@storeAccounts')->name('accountcreate');
 
 /*
 |--------------------------------------------------------------------------

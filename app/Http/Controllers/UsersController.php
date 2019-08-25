@@ -4,7 +4,7 @@ namespace audiophoneapp\Http\Controllers;
 
 use Illuminate\Http\Request; 
 use audiophoneapp\Users;
-use audiophoneapp\Http\Requests\UsersRequest; 
+use audiophoneapp\Http\Requests\UsersRequest;
 
 class UsersController extends Controller
 {
@@ -21,44 +21,10 @@ class UsersController extends Controller
 
 	}
 	
- 	public function storeUsers(){//UsersRequest $request){
+ 	public function storeUsers(UsersRequest $request){
 
 
-
-		$dataUser = request()->validate([
-
-			'firstName' => 'required',
-			'lastName' => 'required',
-			'codePhone' => 'required',
-			'cellPhone' => 'required'
-		], [
-
-			'firstName.required' => 'El Nombre es obligatorio',
-			'lastName.required' => 'El Apellido es obligatorio',
-			'codePhone.required' => 'El Códido de país es obligatorio',
-			'cellPhone.required' => 'El Nro. Celular es obligatorio'
-
-		])/*->all()*/;
-
-		//return redirect(route('usernew'))->withInput()->withErrors($dataUser); //laravel envía los errores automaticamente a la vista por medio de la variable errors		
-
-
-		/*
-
-			Si nosotros usamos el metodo from() en los test no hace falta colocar un return despues del validate.
-
-		if(empty($dataUser['firstName'])){
-
-			return redirect(route('usernew'))->withErrors([
-
-				'firstName' => 'El Nombre es obligatorio'		
-
-				]);
-		
-		}
-
-		/*	return redirect(route('users.createUsers')->withErrors($dataUser));//->withInput($dataUser));	
-		}else{*/	
+		$dataUser = request()->all();
 
 		Users::create([
 		   
@@ -69,10 +35,45 @@ class UsersController extends Controller
 
 		]);
 
+		//return redirect(route('accountnew'));	
+
+		$findRegister = Users::find($dataUser['firstName']);
+
+		if(empty($findRegister)){
+
+			return redirect(route('usernew'));
+
+		}else{
+
+				return redirect(route('accountnew'));	
+		}
+
+	}
+
+		/*return redirect(route('usernew'))->withInput()->withErrors($dataUser); //laravel envía los errores automaticamente a la vista por medio de la variable errors		
+
+
+		/*
+
+			Si nosotros usamos el metodo from() en los test no hace falta colocar un return despues del validate.
+
+		if(empty($dataUser['firstName'])){
+
+			->withErrors([
+
+				'firstName' => 'El Nombre es obligatorio'		
+
+				]);
+		
+		}
+
+		/*	return redirect(route('users.createUsers')->withErrors($dataUser));//->withInput($dataUser));	
+		}else{*/	
+
 		//return redirect(route('users.createUsers')->withErrors($dataUser));
 
 		//}
-	}
+	
 
 
  		/*

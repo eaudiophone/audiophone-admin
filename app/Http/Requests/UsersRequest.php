@@ -26,10 +26,23 @@ class UsersRequest extends FormRequest
 
         return [
           
-            'firstName' => 'required|string|min:1|max:10',
-            'lastName' =>  'required|string|min:1|max:10',
-            'codePhone' => 'required|numeric|min:1|max:2',
-            'cellPhone' => 'required|numeric|min:1|max:10'
+            'firstName' => 'required|string|min:1',
+            'lastName' =>  'required|string|min:1',
+            'codePhone' => 'required|numeric|min:1',
+            'cellPhone' => 'required|numeric|min:1'
+
+        ];
+    }
+
+
+    public function attributes(){
+
+        return [
+
+            'firstName' => 'Nombre',
+            'lastName' =>  'Apellido',
+            'codePhone' => 'Código telefónico',
+            'cellPhone' => 'Teléfono Celular'    
 
         ];
     }
@@ -38,10 +51,10 @@ class UsersRequest extends FormRequest
 
         return [
 
-            'firstName.required.string.min:1.max:10' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres alfabéticos',
-            'lastName.required.string.min:1.max:10' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres alfabéticos',
-            'codePhone.required.numeric.min:1.max:2' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 2 caracteres numéricos',
-            'cellPhone.required.numeric.min:1.max:10' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres numéricos'
+            'firstName.required' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres alfabéticos',
+            'lastName.required' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres alfabéticos',
+            'codePhone.required' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 2 caracteres numéricos',
+            'cellPhone.required' => 'El campo :attribute, es obligatorio y solo admite desde 1 hasta 10 caracteres numéricos'
     
         ];
     }

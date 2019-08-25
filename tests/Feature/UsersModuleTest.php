@@ -50,6 +50,9 @@ class UsersModuleTest extends TestCase
 
       ]);
 
+      $this->get('createAccounts/new')
+      ->assertStatus(200);
+
     }
 
     /** 

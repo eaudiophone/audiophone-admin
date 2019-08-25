@@ -86,7 +86,7 @@
 									<label for="lastName">Apellidos:</label>
 									<input type="text" id="lastName" class="form-control"
 									placeholder="apellido ..." name="lastName" maxlength="10"
-									pattern="[A-Z a-z]+" autofocus>
+									pattern="[A-Z a-z]+" autofocus value="{{ old('lastName') }}">
 								</div>
 							</div>
 						</div>
@@ -96,7 +96,8 @@
 						<div class="form-row">
 							<div class="col-sm-6">
 								<label for="cod_phone">Codigo teléfonico:</label>
-								<select name="codePhone" id="codePhone" class="form-control">
+								<select name="codePhone" id="codePhone" class="form-control"
+								value="{{ old('codePhone') }}">
 									<option value="" selected>Seleccione ...</option>
 									<option value="58">+58 Venezuela</option>
 								</select>
@@ -105,7 +106,8 @@
 							<div class="col-sm-6">
 								<label for="cellPhone">Teléfono celular:</label>
 								<input type="text" id="cellPhone" class="form-control" placeholder="telefono ..."
-								name="cellPhone" maxlength="10" pattern="[0-9]+" autofocus>
+								name="cellPhone" maxlength="10" pattern="[0-9]+" autofocus
+								value="{{ old('cellPhone') }}">
 							</div>
 						</div>
 					</div>

@@ -3,9 +3,8 @@
 namespace audiophoneapp\Http\Controllers;
 
 use Illuminate\Http\Request;
-use audiophoneapp\app\Accounts;
-use audiophoneapp\app\Users;
-use audiophoneapp\app\Requests\AccountsRequest;
+use audiophoneapp\Accounts;
+use audiophoneapp\Http\Requests\AccountsRequest;
 
 class AccountsController extends Controller
 {
@@ -23,7 +22,7 @@ class AccountsController extends Controller
 	}
 
 	
-	public function storeAccounts(AccountsRequest $request){
+	/*public function storeAccounts(AccountsRequest $request){
 
 		$dataAccounts = request()->all();
 
@@ -51,7 +50,7 @@ class AccountsController extends Controller
 	}
 
 
-	public function consultAccounts($idAccount){
+	/*public function consultAccounts($idAccount){
 
 	 	return view('users.profiles.index', ['idAccount' => Accounts::findOrFail($idAccount)]);
 
@@ -120,8 +119,6 @@ class AccountsController extends Controller
 
 		}
 
-	}
-
-
+	}*/
 
 }
