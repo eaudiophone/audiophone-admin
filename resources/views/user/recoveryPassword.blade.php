@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="es_VE">
-	<head>
-		
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+@section( 'title', 'recovery' )
+@include( 'layouts/head' )
 
-		<title>Recovery</title>
-
-		<!-- Boostrap CSS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/bootstrap.min.css')}}">
-		<!-- Fontawesome -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
-		<!-- recovery theme -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/recovery.css')}}">
-		<link rel="shorcut icon" type="image/png" href="{{asset('img/Logo 01.png')}}">		
-
-	</head>
-	<body>
+	<link rel="stylesheet" href="{{ asset( config( 'assets.RECOVERY' ) ) }}">
 
 	<!-- Logo del estudio -->
 	<center>
-		<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
+		<img src="{{ asset( config( 'assets.LOGO' ))}}" class="mb-4" alt="imagen-principal" id="logo">
 	</center>
 
 		<h3 class="text-center">Recuperación de contraseña</h3>
@@ -75,16 +59,15 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row" id="center">
+	<div class="container mb-4 mt-5">
+		<div class="row text-center">
 			<div class="col-sm-6">
 				<a href="/">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="createUser">Registro</a>
+				<a href="/user/createUser">Registro</a>
 			</div>
 		</div>
 	</div>
 
-	</body>
-</html>
+@include( 'layouts/footer' )

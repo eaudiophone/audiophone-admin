@@ -1,30 +1,14 @@
-<!DOCTYPE HTML>
-<html lang="es_VE">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+@section( 'title', 'register' )
+@include( 'layouts/head' )
 
-		<title>Register</title>
+	<link rel="stylesheet" href="{{ asset( config( 'assets.REGISTER' ) ) }}">
 
-		<!-- Boostrap CSS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/vendor/bootstrap.min.css')}}">
-		<!-- Fontawesome -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
+	<!-- Logo del estudio -->
+	<center>
+		<img src="{{asset( config( 'assets.LOGO' ) )}}" class="mb-4" alt="imagen-principal" id="logo">
+	</center>
 
-		<!-- Main theme-->
-		<link rel="shorcut icon" type="image/png" href="{{asset('img/Logo 01.png')}}">
-		<link rel="stylesheet" type="text/css" href="{{asset('css/register.css')}}">
-	</head>
-
-	<body>
-
-		<!-- Logo del estudio -->
-		<center>
-			<img src="{{asset('img/Logo 01.png')}}" class="mb-4" alt="imagen-principal" id="logo">
-		</center>
-
-		<h3 class="text-center">Registro de usuarios <br> Datos de Cuenta</h3>
+	<h3 class="text-center">Registro de usuarios <br> Datos de Cuenta</h3>
 
 		<!-- Contenedor 2 -->
 
@@ -111,42 +95,30 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row" id="center">
-			<div class="col-sm-6">
-				<a href="/" class="">Login</a>
-			</div>
-			<div class="col-sm-6">
-				<a href="recoveryPassword" class="">Recuperar Contraseña</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- JS -->
-	<script type="text/javascript" src="{{asset('js/vendor/jquery.js')}}"></script>
-	<script text="text/javascript" src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
+	@include( 'layouts/backOptions' )
 
 	<script>
 
-			//animacion de progress bar (JavaScript)
+		document.addEventListener( 'DOMContentLoaded', () => {
+
 			var progreso = 0;
+			var barra = document.getElementById( 'bar' );
 
-			var idInterval = setInterval(function() {
+			var idInterval = setInterval( () => {
 
-				//aumento del 10 en el progreso
 				progreso += 33.3;
-				$('#bar').css('width', progreso + '%');
+				barra.style.width = `${ progreso }%`;
 
-				if (progreso == 33.3) {
+				if ( progreso == 33.3 ) {
 
-					clearInterval(idInterval);
+					clearInterval( idInterval );
 				}
-			},
-
-			//cantidad de segundos
-			500);
+			}, 500);
+		});
 
 	</script>
 
-	</body>
-</html>	
+@include( 'layouts/footer' )	
+
+	
+
