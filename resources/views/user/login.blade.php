@@ -29,11 +29,11 @@
 		<div class="links text-center">
 			<p>
 				¿Es la primera vez? 
-				<a href="/user/createUser">Regístrese</a>
+				<a href="{{ url('createUser') }}">Regístrese</a>
 			</p>
 			<p>
 				¿Olvido su contraseña?
-				<a href="user/recoveryPassword">Recuperar</a>
+				<a href="{{ url('recovery') }}">Recuperar</a>
 			</p>
 			
 		</div>

@@ -1,5 +1,6 @@
 @extends('layouts.dashboardAdmin')
-@section('title', 'Perfiles de Usuario')
+
+@section('title', 'profiles')
 @section('content')
 	
 	<link rel="stylesheet" href="{{asset('css/table.css')}}">
@@ -29,7 +30,7 @@
 			</div>
 		</div> 
 
-		<!-- Colocar aqui el buscador de usuarios: -->
+		<!-- buscador de usuarios: -->
 		@include('admin.search')
 
 		<!-- tabla de datos -->

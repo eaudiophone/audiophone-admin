@@ -13,5 +13,11 @@
 		'LOGO' => 'img/Logo 01.png',
 		'REGISTER' => 'css/register.css',
 		'LOGIN' => 'css/login.css',
-		'RECOVERY' => 'css/recovery.css'
+		'RECOVERY' => 'css/recovery.css',
+		'MAIN' => 'css/main.css',
+		'MOMENT_JS' => 'js/vendor/moment.min.js',
+		'FULLCALENDAR_JS' => 'js/vendor/fullcalendar.min.js',
+		'FULLCALENDAR_CSS' => 'css/vendor/fullcalendar.min.css',
+		'CUSTOM_CALENDAR' => 'js/custom_calendar.js',
+		'SPANISH' => 'js/vendor/es.js'
 	];

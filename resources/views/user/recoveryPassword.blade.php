@@ -62,10 +62,10 @@
 	<div class="container mb-4 mt-5">
 		<div class="row text-center">
 			<div class="col-sm-6">
-				<a href="/">Login</a>
+				<a href="{{ url('/') }}">Login</a>
 			</div>
 			<div class="col-sm-6">
-				<a href="/user/createUser">Registro</a>
+				<a href="{{ url('createUser') }}">Registro</a>
 			</div>
 		</div>
 	</div>

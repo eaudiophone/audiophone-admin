@@ -1,5 +1,5 @@
 @extends('layouts.dashboardAdmin')
-@section('title', 'Presupuesto')
+@section('title', 'budget')
 @section('content')
 
 	<link rel="stylesheet" href="{{asset('css/budget.css')}}">

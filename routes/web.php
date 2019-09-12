@@ -26,7 +26,7 @@ Route::get('/', function () {
     return view('user/login');
 });
 
-Route::get('/user/recoveryPassword', function() {
+Route::get('recovery', function() {
 	return view('user/recoveryPassword');
 });
 
@@ -40,19 +40,19 @@ Route::get('/user/recoveryPassword', function() {
 |
 */
 
-Route::get('/user/profiles/index', function() {
+Route::get('profiles', function() {
 	return view('user/profiles/index');
 });
 
-Route::get('/user/createUser', function () {
+Route::get('createUser', function () {
     return view('user/createUser');
 });
 
-Route::get('/user/createUser2', function () {
+Route::get('createUser2', function () {
     return view('user/createUser2');
 });
 
-Route::get('/user/createUser3', function () {
+Route::get('createUser3', function () {
     return view('user/createUser3');
 });
 
@@ -67,19 +67,19 @@ Route::get('/user/createUser3', function () {
 
 //Modulo de renta 
 
-Route::get('meeting/rental/index', function() {
+Route::get('rental', function() {
 	return view('meeting/rental/index');
 });
 
 //Modulo de diagnostico 
 
-Route::get('meeting/diagnostic/index', function() {
+Route::get('diagnostic', function() {
 	return view('meeting/diagnostic/index');
 });
 
 //Modulo de grabacion
 
-Route::get('meeting/records/index', function() {
+Route::get('records', function() {
 	return view('meeting/records/index');
 });
 
@@ -93,30 +93,30 @@ Route::get('meeting/records/index', function() {
 |
 */
 
-Route::get('/admin/index', function() {
+Route::get('admin', function() {
 	return view('admin/index');
 });
 
-Route::get('/admin/profiles', function() {
+Route::get('profiles', function() {
 	return view('admin/profiles');
 });
 
-Route::get('/admin/estadistic', function() {
+Route::get('estadistic', function() {
 	return view('admin/estadistic');
 });
 
-Route::get('admin/show', function() {
+Route::get('show', function() {
 	return view('admin/show');
 });
 
-Route::get('admin/days', function() {
+Route::get('days', function() {
 	return view('admin/days');
 });
 
-Route::get('admin/budget', function() {
+Route::get('budget', function() {
 	return view('admin/budget');
 });
 
-Route::get('admin/adminProfile', function() {
+Route::get('adminProfile', function() {
 	return view('admin/adminProfile');
 });
