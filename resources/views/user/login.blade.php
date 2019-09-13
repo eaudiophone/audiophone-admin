@@ -3,7 +3,7 @@
 
 	<link rel="stylesheet" href="{{ asset( config( 'assets.LOGIN' ) ) }}">
 
-	<form class="form-signin">
+	<form class="form-signin" method="POST">
 
 		<!-- Logo del estudio -->
 		<center>
@@ -12,6 +12,8 @@
 		
 		<!-- Titulo -->
 		<h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+
+		{{ csrf_field() }}
 
 		<label for="inputEmail" class="sr-only">Email address</label>
 		<input type="email" id="inmputEmail" class="form-control" 
