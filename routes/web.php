@@ -40,22 +40,13 @@ Route::get('recovery', function() {
 |
 */
 
-Route::get('profiles', function() {
+Route::get('profile', function() {
 	return view('user/profiles/index');
 });
 
 Route::get('createUser', function () {
     return view('user/createUser');
 });
-
-Route::get('createUser2', function () {
-    return view('user/createUser2');
-});
-
-Route::get('createUser3', function () {
-    return view('user/createUser3');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Route Meeting
