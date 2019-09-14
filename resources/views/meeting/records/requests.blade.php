@@ -7,7 +7,7 @@
         <div class="col-sm-6">
             
           <div class="card">
-              <div class="card-body">
+              <div class="card-body" style="background-color: #f7eda0;">
 
                 <div class="row">
                   <div class="col-sm-1">

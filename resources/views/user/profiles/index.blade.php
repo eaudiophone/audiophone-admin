@@ -2,10 +2,10 @@
 @section('title', 'Perfil') <!-- Agrega el nombre de la página -->
 @section('content')
 
-<link rel="stylesheet" type="text/css" href="{{asset('css/user.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset( config( 'assets.USER' ) )}}">
 
 	<!-- Contenido -->
-	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
+	<div class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
 			
 		<!-- Titulo -->
 
@@ -31,52 +31,15 @@
 				<div class="offset-sm-1 col-sm-10">
 
 					<center>
-						<img src="{{asset('img/avatar_300x300.png')}}" alt="avatar">
-					
-						<!-- Tabla usuario -->
-						<table>
-							<tbody>
-								<tr>
-									<th>Nombre:</th>
-									<td>nombre</td>
-								</tr>
-								<tr>
-									<th>Apellido:</th>
-									<td>apellido</td>
-								</tr>
-								<tr>
-									<th>Dirección:</th>
-									<td>dirección</td>
-								</tr>
-								<tr>
-									<th>Redes Sociales:</th>
-									<td>red</td>
-								</tr>
-								<tr>
-									<th>Email:</th>
-									<td>email</td>
-								</tr>
-								<tr>
-									<th>Código telefonico:</th>
-									<td>código telefonico</td>
-								</tr>
-								<tr>
-									<th>Teléfono Celular:</th>
-									<td>teléfono celular</td>
-								</tr>
-								<tr>
-									<th>Teléfono Local:</th>
-									<td>teléfono local</td>
-								</tr>
-								<tr>
-									<th>País:</th>
-									<td>país</td>
-								</tr>
-							</tbody>
-						</table>
+						<img src="{{asset( config( 'assets.AVATAR' ) )}}" alt="avatar">
 					</center>
+					
+					<!-- Card User  -->
+					@include('user/profiles/cardProfile')
+
 				</div>		
 			</div>
 		</div>
+	</div>
 
 @endsection 

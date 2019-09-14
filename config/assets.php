@@ -19,5 +19,7 @@
 		'FULLCALENDAR_JS' => 'js/vendor/fullcalendar.min.js',
 		'FULLCALENDAR_CSS' => 'css/vendor/fullcalendar.min.css',
 		'CUSTOM_CALENDAR' => 'js/custom_calendar.js',
-		'SPANISH' => 'js/vendor/es.js'
+		'SPANISH' => 'js/vendor/es.js',
+		'USER' => 'css/user.css',
+		'AVATAR' => 'img/avatar_300x300.png'
 	];

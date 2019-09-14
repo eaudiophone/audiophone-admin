@@ -21,7 +21,7 @@
 						<i class="fas fa-w fa-plus"></i>
 						Nuevo Evento
 					</button>
-					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
+					<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" 
 					data-target="#modalRecordsInfo">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
