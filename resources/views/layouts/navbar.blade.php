@@ -7,39 +7,6 @@
 		<!-- Navbar -->
 		<ul class="navbar-nav ml-auto mr-0 mr-md-3 my-2 my-md-0">
 
-			<!-- Servicios 
-			<li class="nav-item dropdown no-arrow mx-1">
-				<a href="" class="nav-link dropdown-toggle" id="servicesDropdown"
-				role="button" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false">
-					<i class="fas fa-w fa-star"></i>
-				</a>
-
-				<div class="dropdown-menu dropdown-menu-right" 
-				aria-labelledby="servicesDropdown">
-					<a href="./../../meeting/rental/index" class="dropdown-item">
-						<i class="fas fa-w fa-truck"></i>
-						<span>Alquiler</span>
-					</a>
-					<a href="./../../meeting/diagnostic/index" class="dropdown-item">
-						<i class="fas fa-w fa-clipboard-check"></i>
-						<span>Diagnosticos</span>
-					</a>
-					<a href="./../../meeting/records/index" class="dropdown-item">
-						<i class="fas fa-w fa-microphone"></i>
-						<span>Grabaciones</span>
-					</a>
-
-					<div class="dropdown-divider"></div>
-
-					<a href="" class="dropdown-item" data-toggle="modal" data-target="#modalInfo">
-						<i class="fas fa-w fa-info"></i>
-						<span>Acerca de</span>
-					</a>
-
-				</div>
-			</li> -->
-
 			<!-- Alertas -->
 			<li class="nav-item dropdown no-arrow mx-1">
 				<a href="" class="nav-link dropdown-toogle" id="alertsDropdown" role="button"
@@ -75,9 +42,9 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="./../../user/profiles/index" class="dropdown-item">Perfil</a>
+					<a href="{{ url('profile') }}" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
-					<a href="/" class="dropdown-item">Salir</a>
+					<a href="{{ url('/') }}" class="dropdown-item">Salir</a>
 				</div>
 			</li>
 		</ul>

@@ -20,18 +20,7 @@
 
 					<div class="row">
 						<div class="col-sm-12" id="title">
-							<h5 class="text-center">Barra de Progreso</h5>
-						</div>
-					</div>
-					<div class="row" id="progress-bar">
-						
-						<div class="col-sm-12">
-							<div class="progress" >
-								<div class="progress-bar" role="progressbar" style="width: 0%" 
-								aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-									0%
-								</div>
-							</div>
+							<h5 class="text-center">Completa el registro</h5>
 						</div>
 					</div>
 				</div>
@@ -41,23 +30,18 @@
 			<div class="card-body">
 
 				<!-- Form User  -->
-				<form>
+				<form action="" method="POST">
+
 					<div class="form-group">
 						<div class="form-row">
 						
-							<div class="col-sm-6">
+							<div class="col-sm-12">
 								<div class="form-label-group">
-									<label for="firstName">Nombres:</label>
-									<input type="text" id="firstName" class="form-control"
-									placeholder="nombre ..." required autofocus>
-								</div>
-							</div>
-
-							<div class="col-sm-6">
-								<div class="form-label-group">
-									<label for="lastName">Apellidos:</label>
-									<input type="text" id="lastName" class="form-control"
-									placeholder="apellido ..." required autofocus>
+									<label for="firstName">Nombre:</label>
+									<input type="text" id="name" name="name" class="form-control"
+									placeholder="nombre ..." required autofocus
+									pattern="[A-Z a-z]*" title="solo letras"
+									maxlength="25">
 								</div>
 							</div>
 						</div>
@@ -66,23 +50,15 @@
 					<div class="form-group">
 						<div class="form-row">
 							<div class="col-sm-6">
-								<label for="age">Edad:</label>
-								<input type="text" id="age" class="form-control"
-								placeholder="edad ... " required autofocus>
+								<label for="age">Correo:</label>
+								<input type="email" id="email" name="email" class="form-control"
+								placeholder="correo ... " required autofocus>
 							</div>
 
 							<div class="col-sm-6">
-								<label for="socialNetworks">Redes sociales:</label>
-								<input type="text" id="socialNetworks" class="form-control" placeholder="enlace ..." autofocus>
+								<label for="socialNetworks">Contraseña:</label>
+								<input type="password" id="password" name="password" class="form-control" placeholder="contraseña ..." required autofocus minlength="8">
 							</div>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="form-row">
-							<label for="address">Dirección:</label>
-							<textarea class="form-control" id="address"
-							placeholder="dirección ..." required></textarea>
 						</div>
 					</div>
 
@@ -102,6 +78,7 @@
 							</div>
 						</div>
 					</div>	
+
 				</form>
 			</div>
 		</div>
