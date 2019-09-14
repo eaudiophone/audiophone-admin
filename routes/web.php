@@ -62,12 +62,6 @@ Route::get('rental', function() {
 	return view('meeting/rental/index');
 });
 
-//Modulo de diagnostico 
-
-Route::get('diagnostic', function() {
-	return view('meeting/diagnostic/index');
-});
-
 //Modulo de grabacion
 
 Route::get('records', function() {

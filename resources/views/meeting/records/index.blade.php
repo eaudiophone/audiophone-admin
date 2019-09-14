@@ -3,7 +3,7 @@
 @section('content')
 	
 	<!-- Contenido -->
-	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
+	<div class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
 			
 		<!-- Titulo -->
 
@@ -15,18 +15,25 @@
 			<!-- grupo de botones -->
 
 			<div class="btn-toolbar mb-2 mb-md-0">
-				<div>
+				<div class="btn-group">
+
+					<button type="button" class="btn btn-sm btn-success">
+						<i class="fas fa-w fa-plus"></i>
+						Nuevo Evento
+					</button>
 					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
 					data-target="#modalRecordsInfo">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
 					</button>
+
 				</div>
 			</div>
 		</div>
-		
-		<!-- Importamos el calendario -->
-		@include('layouts.calendar')	
-			
+
+		@include('meeting/records/requests')
+
+	</div>	
+
 
 @endsection

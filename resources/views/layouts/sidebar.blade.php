@@ -15,12 +15,6 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{ url('diagnostic') }}" class="nav-link">
-								<i class="fas fa-w fa-clipboard-check"></i>
-								<span>Diagnosticos</span>
-							</a>
-						</li>
-						<li class="nav-item">
 							<a href="{{ url('records') }}" class="nav-link">
 								<i class="fas fa-w fa-microphone"></i>
 								<span>Grabaciones</span>

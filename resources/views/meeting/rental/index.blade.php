@@ -14,17 +14,26 @@
 			<!-- grupo de botones -->
 
 			<div class="btn-toolbar mb-2 mb-md-0">
-				<div>
+				<div class="btn-group">
+					
+					<button type="button" class="btn btn-sm btn-success">
+						<i class="fas fa-w fa-plus"></i>
+						Nuevo Evento
+					</button>
 					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
 					data-target="#modalRentalInfo">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
 					</button>
+
 				</div>
 			</div>
 		</div>
-		<!-- incluimos el calendario -->
-		@include('layouts.calendar')
+
+		@include('meeting/rental/requests')
+
 	</div>
+
+	
 		
 @endsection
