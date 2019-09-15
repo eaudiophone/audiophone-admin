@@ -1,13 +1,29 @@
+<center>
+	<img src="{{asset( config( 'assets.AVATAR' ) )}}" alt="avatar">
+</center>
+
 <div class="card mt-5 mb-5">
 						
 	<div class="card-header">
-		<h5 class="card-title">Datos del usuario</h5>
+		<div class="row">
+			<div class="col-sm-6">
+				<h5 class="card-title">Datos del usuario</h5>
+			</div>
+			<div class="col-sm-6 text-right">
+				<button class="btn btn-sm btn-secondary" id="editar">Editar Perfil</button>
+			</div>
+		</div>
+		
 	</div>
 						
 	<div class="card-body">
 
-		<form action="">
-								
+		<form action="" method="POST" id="form">
+					
+			<!-- campos de seguridad -->
+			{{ method_field( 'PUT' ) }}
+			{{ csrf_field() }}
+
 			<div class="form-group">
 				<div class="form-row">
 										
@@ -36,15 +52,14 @@
 				<div class="form-row pt-3">
 										
 					<div class="col-sm-3">
-						<label for="name">Nueva contraseña:</label>
+						<label for="name">Rol de aplicacion:</label>
 					</div>
 					<div class="col-sm-9">
-						<input type="password" id="name" name="name" class="form-control"
-						required autofocus minlength="8" placeholder="contraseña ...">		
+						<span>USER_ROLE</span>
 					</div>
 				</div>
 
-				<div class="form-row pt-3 text-center">
+				<div class="form-row pt-5 text-center">
 					<div class="col-sm-6">
 						<button type="submit" class="btn btn-success">
 							<i class="fas fa-w fa-save"></i>		
@@ -65,3 +80,29 @@
 		</form>
 	</div>
 </div>
+
+<script>
+
+	var form = document.getElementById( 'form' );
+	var boton = document.getElementById( 'editar' );
+
+	document.addEventListener( 'DOMContentLoaded', activar );
+	boton.addEventListener( 'click', activar );
+
+	function activar() {
+
+		for ( var i = 2; i < form.length; i++ ) {
+
+			if ( !form[i].disabled ) {
+
+				form[i].disabled = true;
+			}
+
+			else {
+
+				form[i].disabled = false;
+			}
+		}
+	}
+
+</script>

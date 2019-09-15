@@ -17,9 +17,8 @@
 			<!-- grupo de botones -->
 
 			<div class="btn-toolbar mb-2 mb-md-0">
-				<div class="btn-group mr-2">
-					<button class="btn btn-sm btn-outline-secondary">Editar Perfil</button>
-					<button class="btn btn-sm btn-outline-secondary">Cambiar Contraseña</button>
+				<div>
+					<!--<button class="btn btn-sm btn-outline-secondary" id="editar">Editar Perfil</button> -->
 				</div>
 			</div>
 		</div>
@@ -30,10 +29,6 @@
 			<div class="row">
 				<div class="offset-sm-1 col-sm-10">
 
-					<center>
-						<img src="{{asset( config( 'assets.AVATAR' ) )}}" alt="avatar">
-					</center>
-					
 					<!-- Card User  -->
 					@include('user/profiles/cardProfile')
 
