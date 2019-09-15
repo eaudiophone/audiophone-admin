@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="{{asset('css/table.css')}}">
 	
 	<!--Contenido-->
-	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
+	<div class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
 
 		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap 
 		align-items-center pb-2 mb-3 border-bottom">
@@ -16,15 +16,15 @@
 			<!-- Grupo de botones -->
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div class="btn-group mr-2">
-					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
+					<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+					data-target="#modalPAdministrador"> 
+						<i class="fas fa-w fa-user"></i>
+						Nuevo Administrador
+					</button>
+					<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" 
 					data-target="#modalPerfil">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
-					</button>
-					<button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
-					data-target="#modalPAdministrador">
-						<i class="fas fa-w fa-user"></i>
-						Nuevo Administrador
 					</button>
 				</div>
 			</div>
@@ -32,26 +32,10 @@
 
 		<!-- buscador de usuarios: -->
 		@include('admin.search')
-
-		<!-- tabla de datos -->
-		<table class="table table-striped">
-			<thead class="thead-dark">
-				<tr id="center">
-					<th>#:</th>
-					<th>Nombre:</th>
-					<th>Correo:</th>
-					<th>Acción:</th>
-				</tr>
-			</thead>
-			<tbody id="center">
-				<tr>
-					<td>1</td>
-					<td>dato</td>
-					<td>dato</td>
-					<td>dato</td>
-				</tr>
-			</tbody>
-		</table>
+		@include( 'admin/profiles/tableUsers' )
+		
+	</div>
+		
 
 		<!-- incluir la paginación -->
 
