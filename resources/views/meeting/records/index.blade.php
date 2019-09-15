@@ -17,7 +17,7 @@
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div class="btn-group">
 
-					<button type="button" class="btn btn-sm btn-success">
+					<button type="button" class="btn btn-sm btn-success" id="modalEvent">
 						<i class="fas fa-w fa-plus"></i>
 						Nuevo Evento
 					</button>
@@ -32,7 +32,7 @@
 		</div>
 
 		@include('meeting/records/requests')
-
+		
 	</div>	
 
 

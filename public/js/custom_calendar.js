@@ -1,20 +1,8 @@
-//inicializacion del calendario
-$(document).ready(function() {
-	
-	//renderizacion del calrendario			
+$( document ).ready( function() {
+			
 	$('#calendar').fullCalendar({
 
-		//encabezado del calendario
 		header: {
-
-			/*opciones a visualizar:
-				
-				month: mostrar mes
-				basicWeek: te muestra en formato basico la semana
-				basicDay: te muestra en formato basico el dia
-				agendaWeek: te muestra en formato de agenda la semana
-				agendaDay: te muestra en fomato de agenda el día
-			*/
 
 			left: 'today, prevYear,prev',
 			center: 'title',
@@ -33,7 +21,7 @@ $(document).ready(function() {
 		*/
 
 		//Evento por día (Ventana Modal)
-		dayClick: function(date, jsEvent, view) {
+		dayClick: function( date, jsEvent, view ) {
 			
 			//variable que almacena el URL de la pagina
 			var url = window.location,

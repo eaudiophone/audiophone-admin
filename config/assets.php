@@ -21,5 +21,6 @@
 		'CUSTOM_CALENDAR' => 'js/custom_calendar.js',
 		'SPANISH' => 'js/vendor/es.js',
 		'USER' => 'css/user.css',
-		'AVATAR' => 'img/avatar_300x300.png'
+		'AVATAR' => 'img/avatar_300x300.png',
+		'MODALS' => 'js/modals.js'
 	];
