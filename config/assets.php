@@ -8,6 +8,8 @@
 
 		'BOOTSTRAP_CSS' => 'css/vendor/bootstrap.min.css',
 		'BOOTSTRAP_JS' => 'js/vendor/bootstrap.min.js',
+		'CLOCKPICKER_CSS' => 'css/vendor/bootstrap-clockpicker.css',
+		'CLOCKPICKER_JS' => 'js/vendor/bootstrap-clockpicker.js',
 		'JQUERY' => 'js/vendor/jquery.js',
 		'FONTAWESOME' => 'css/all.min.css',
 		'LOGO' => 'img/Logo 01.png',

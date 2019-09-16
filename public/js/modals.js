@@ -19,16 +19,12 @@ $( boton ).click( function() {
 
 	if ( url === 'rental' ) {
 
-		// console.log( url );
-
 		$( '#titleModal' ).prop( 'innerHTML', 'Nuevo Evento de Alquiler' );
 		getFormEmpty();
 
 	}
 
 	else {
-
-		// console.log( url ); 
 		
 		$('#titleModal').prop( 'innerHTML', 'Nuevo Evento de Grabación' );
 		getFormEmpty();

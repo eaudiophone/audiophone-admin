@@ -2,6 +2,7 @@
 
 		<!-- Main Theme -->
 		<link rel="stylesheet" type="text/css" href="{{ asset( config( 'assets.MAIN' ) )}}">
+		<link rel="stylesheet" href="{{ asset( config('assets.CLOCKPICKER_CSS') ) }}">
 	
 		@include( 'layouts/navbar' )
 		@include( 'layouts/sidebar' )
@@ -18,8 +19,8 @@
 	
 		<!-- Bootstrap min.js -->
 		<script src="{{ asset( config('assets.BOOTSTRAP_JS') )}}"></script>
+		<script src="{{ asset( config( 'assets.CLOCKPICKER_JS' ) ) }}"></script>
 
-		<!-- fullcalendar idioma español -->
 		<script src="{{ asset( config('assets.MOMENT_JS') )}}"></script>
 		<script src="{{ asset( config( 'assets.MODALS' ) )}}"></script>	
 	</body>

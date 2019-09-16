@@ -1,16 +1,20 @@
          <div class="form-row">
 
-            <div class="col-sm-2">
+           <div class="col-sm-2">
               <label for="">Hora de inicio:</label> 
             </div>
             <div class="col-sm-2">
-              <input id="startTime" class="form-control">
+              <div class="input-group clockpicker">
+                <input id="startTime" type="text" class="form-control">  
+              </div>
             </div>
             <div class="col-sm-2 text-center">
               <label for="">Hora final:</label> 
             </div>
             <div class="col-sm-2">
-              <input id="finalTime" class="form-control">
+              <div class="input-group clockpicker">
+                 <input id="finalTime" class="form-control" type="text">
+              </div>
             </div>
             <div class="col-sm-2 text-center">
               <label for="">Total Horas:</label> 
@@ -19,7 +23,7 @@
               <input id="totalHours" class="form-control">
             </div>
             
-         </div>
+         </div> 
 
         <div class="form-row pt-3">
 
