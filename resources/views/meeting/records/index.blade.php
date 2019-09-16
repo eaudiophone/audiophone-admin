@@ -32,22 +32,6 @@
 		</div>
 
 		@include('meeting/records/requests')
-
-		<script>
-
-    		var optionsClockPicker = {
-
-      		placement: 'bottom',
-      		align: 'left',
-      		autoclose: true
-    	};
-      
-    	document.addEventListener( 'DOMContentLoaded', function()  {
-
-      		$( '.clockpicker' ).clockpicker( optionsClockPicker );
-    	});
-
-  </script>
 	</div>	
 
 @endsection
