@@ -1,5 +1,3 @@
-var swal; // sweetAlert
-
 var optionsClockPicker = {
 
     placement: 'bottom',
@@ -10,17 +8,14 @@ var optionsClockPicker = {
 
     	if ( ( $( '#startTime' ).val() ) && ( $( '#finalTime' ).val() )  ) {
 
-    		var beginHour = $( '#startTime' ).val();
-			var finalHour = $( '#finalTime' ).val();
+    		var beginHour = $( '#startTime' ).val().split( ':' );
+			var finalHour = $( '#finalTime' ).val().split( ':' );
 
-        	var arraySplit = beginHour.split( ':' );
-        	var arraySplit2 = finalHour.split( ':' ); 
+			var minutes = parseInt( finalHour[1] );
 
-        	beginHour = parseInt( arraySplit[0] );
-        	finalHour = parseInt( arraySplit2[0] );
-
-        	var minutes = parseInt( arraySplit2[1] );
-
+        	beginHour = parseInt( beginHour[0] );
+        	finalHour = parseInt( finalHour[0] );
+        	
         	calculateHours( beginHour, finalHour, minutes );
     	}
 
@@ -31,7 +26,7 @@ var optionsClockPicker = {
     }
 };
       
-function openModal() {
+function openModal( method ) {
 	
 	var baseURL = $( '#modalEvent' ).prop( 'baseURI' ).split( '/' );
 	var url = baseURL[ 3 ];
@@ -46,20 +41,17 @@ function openModal() {
 		$( '#titleModal' ).prop( 'innerHTML', 'Nueva Grabación' );
 	}
 
+	if ( method === 'nuevo' ) {
+
+		getFormEmpty();
+	}
+
+	else {
+
+		getData();
+	}
+
 	$('#modalEvents').modal();
-	getFormEmpty();	
-}
-
-function getFormEmpty() {
-
-	$( '#startTime' ).val( null );
-	$( '#finalTime' ).val( null );
-	$( '#totalHours' ).val( null );
-	$( '#appointmentDate' ).val( null );
-	$( '#title' ).val( null );
-	$( '#description' ).val( null );
-	$( '#addressMeeting' ).val( null );
-
 }
 
 function calculateHours( begin, final, minutes ) {
@@ -83,19 +75,34 @@ function calculateHours( begin, final, minutes ) {
 
 	else {
 
-		swal({
-			title: 'opcion invalida',
-			text: 'La hora final no puede ser inferior a la hora de inicio',
-			icon: 'warning',
-			button: 'Salir',
-		});
+		alert( 'la hora final no puede ser inferior a la fecha de inicio' );
 
-		$( '#totalHours' ).val('');
-		$( '#finalTime' ).val('');
+		$( '#totalHours' ).val( null );
+		$( '#finalTime' ).val( null );
 	}
 }
 
-$( '#modalEvent' ).click( openModal );
+function getData() {
+
+	$( '#startTime' ).val( '18:00' );
+	$( '#finalTime' ).val( '19:00' );
+	$( '#totalHours' ).val( 1 );
+	$( '#appointmentDate' ).val( '2019-01-01' );
+	$( '#title' ).val( 'prueba' );
+	$( '#description' ).val( 'prueba' );
+	$( '#addressMeeting' ).val( 'prueba' );
+}
+
+function getFormEmpty() {
+
+	$( '#startTime' ).val( null );
+	$( '#finalTime' ).val( null );
+	$( '#totalHours' ).val( null );
+	$( '#appointmentDate' ).val( null );
+	$( '#title' ).val( null );
+	$( '#description' ).val( null );
+	$( '#addressMeeting' ).val( null );
+}
 
 $( document ).ready( function() {
 
@@ -105,5 +112,5 @@ $( document ).ready( function() {
 // save
 $( '#save' ).click( function()  {
 	
-	$( '#modalEvents' ).modal( 'toggle' );
+	$( '#modalEvents' ).modal( 'toggle' );	
 });

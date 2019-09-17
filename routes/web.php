@@ -47,6 +47,11 @@ Route::get('profile', function() {
 Route::get('createUser', function () {
     return view('user/createUser');
 });
+
+Route::get('adminProfile', function() {
+	return view('user/profiles/adminProfile');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Route Meeting
@@ -102,6 +107,3 @@ Route::get('budget', function() {
 	return view('admin/budget');
 });
 
-Route::get('adminProfile', function() {
-	return view('admin/adminProfile');
-});

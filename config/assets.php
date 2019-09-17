@@ -25,5 +25,6 @@
 		'USER' => 'css/user.css',
 		'AVATAR' => 'img/avatar_300x300.png',
 		'MODALS' => 'js/modals.js',
-		'SWEETALERT' => 'js/vendor/sweetalert.min.js'
+		'SWEETALERT' => 'js/vendor/sweetalert.min.js',
+		'TABLE' => 'css/table.css'
 	];

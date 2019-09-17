@@ -55,7 +55,7 @@
 						<label for="name">Rol de aplicacion:</label>
 					</div>
 					<div class="col-sm-9">
-						<span>USER_ROLE</span>
+						<span>USER_ROLE || ADMIN_ROLE</span>
 					</div>
 				</div>
 
@@ -103,18 +103,7 @@
 
 	}
 
-	function message() {
-
-		swal({
-			title: 'usuario actualizado',
-			icon: 'success' 
-		});
-	}
-
-
 	document.addEventListener( 'DOMContentLoaded', activar );
 	boton.addEventListener( 'click', activar );
-
-	form.addEventListener( 'submit', message );
 
 </script>

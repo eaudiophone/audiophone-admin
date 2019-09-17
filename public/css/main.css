@@ -95,6 +95,12 @@ footer.sticky-footer .copyright {
   font-family: helvetica;
 }
 
-.bold {
-  font-weight: bold;
+.pointer {
+  cursor: pointer;
 }
+
+.pointer:hover {
+  color: red;
+}
+
+

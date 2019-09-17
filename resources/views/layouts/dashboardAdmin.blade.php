@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="{{asset( config( 'assets.MAIN' ) )}}">
 		<link rel="stylesheet" type="text/css" href="{{asset( config('assets.FULLCALENDAR_CSS') )}}">
 
-		@include( 'layouts/navbar' )
+		@include( 'layouts/navbarAdmin' )
 		@include( 'layouts/sidebarAdmin' )
 			
 			<!-- contenido de la página  -->
@@ -13,7 +13,6 @@
 		<!-- Ventanas Modales -->
 		@include('layouts.modalDashboard')
 		@include('layouts.modalDashboardAdmin')
-		@include('layouts.modalCalendar')
 	
 		<!-- JQuery -->
 		<script type="text/javascript" src="{{asset( config( 'assets.JQUERY' ) )}}"></script>

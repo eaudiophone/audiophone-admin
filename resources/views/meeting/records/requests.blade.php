@@ -18,8 +18,8 @@
                     <h5 class="card-title">Grabación {{ $i }}</h5>
                   </div>
 
-                  <div class="col-sm-1">
-                    <i class="fas fa-w fa-times"></i>
+                  <div class="col-sm-2">
+                    <i class="fas fa-w fa-times pointer"></i>
                   </div>
                 </div>
 
@@ -49,7 +49,10 @@
                 </p>
                 
                 <center>
-                   <a href="#" class="card-link">Modificar</a>  
+                    <button class="btn btn-info" onclick="openModal( 'modificar' )">
+                       <i class="fas fa-w fa-edit"></i>
+                      Modificar
+                    </button>  
                 </center>
             </div>
 

@@ -1,4 +1,4 @@
-<!-- Modal de Rental-->
+<!-- Modal de eventos -->
 <div class="modal fade" tabindex="-1" role="dialog" id="modalEvents" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">

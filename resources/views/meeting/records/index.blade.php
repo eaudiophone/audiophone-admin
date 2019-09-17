@@ -17,7 +17,7 @@
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div class="btn-group">
 
-					<button type="button" class="btn btn-sm btn-success" id="modalEvent">
+					<button type="button" class="btn btn-sm btn-success" id="modalEvent" onclick="openModal( 'nuevo' );">
 						<i class="fas fa-w fa-plus"></i>
 						Nuevo Evento
 					</button>

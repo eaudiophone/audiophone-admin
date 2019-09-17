@@ -3,7 +3,7 @@
 @section('title', 'profiles')
 @section('content')
 	
-	<link rel="stylesheet" href="{{asset('css/table.css')}}">
+	<link rel="stylesheet" href="{{ asset( config( 'assets.TABLE' ) ) }}">
 	
 	<!--Contenido-->
 	<div class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
@@ -15,12 +15,7 @@
 
 			<!-- Grupo de botones -->
 			<div class="btn-toolbar mb-2 mb-md-0">
-				<div class="btn-group mr-2">
-					<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-					data-target="#modalPAdministrador"> 
-						<i class="fas fa-w fa-user"></i>
-						Nuevo Administrador
-					</button>
+				<div>
 					<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" 
 					data-target="#modalPerfil">
 						<i class="fas fa-w fa-info-circle"></i>
@@ -33,10 +28,38 @@
 		<!-- buscador de usuarios: -->
 		@include('admin.search')
 		@include( 'admin/profiles/tableUsers' )
-		
-	</div>
-		
 
 		<!-- incluir la paginación -->
+		
+	</div>
 
+	<script>
+
+		document.addEventListener( 'DOMContentLoaded', function() {
+
+			var boton = document.getElementsByClassName( 'admin' );
+			var boton2 = document.getElementsByClassName( 'delete' );
+
+			for ( var i = 0; i < boton.length; i++ ) {
+
+				boton[i].onclick = message;
+			}
+
+			for ( var i = 0; i <  boton2.length; i++ ) {
+
+				boton2[i].onclick = message2;
+			}
+
+		});
+		
+		function message() {
+			alert( 'admin' );
+		}
+
+		function message2() {
+			alert( 'delete' );
+		}
+
+	</script>
+		
 @endsection

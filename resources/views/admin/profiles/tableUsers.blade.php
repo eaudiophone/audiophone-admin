@@ -20,10 +20,10 @@
 					<td>test@test.com</td>
 					<td>USER_ROLE</td>
 					<td>
-						<button type="button" class="btn btn-sm btn-warning"> 
+						<button type="button" class="btn btn-sm btn-warning admin"> 
 							<i class="fas fa-w fa-user"></i>
 						</button>
-						<button class="btn btn-sm btn-danger">
+						<button class="btn btn-sm btn-danger delete">
 							<i class="fas fa-w fa-trash"></i>
 						</button>
 					</td>
