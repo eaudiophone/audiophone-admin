@@ -13,7 +13,7 @@
 			<!-- Grupo de botones -->
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div>
-					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
+					<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" 
 					data-target="#modalAgenda">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información

@@ -2,7 +2,7 @@
 @section('title', 'Perfil Administrador')
 @section('content')
 	
-<link rel="stylesheet" type="text/css" href="{{asset('css/user.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset( config( 'assets.USER' ) )}}">
 
 	<!-- Contenido -->
 	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="offset-sm-1 col-sm-10">
 
-					@include( 'user/profiles/cardProfile' )
+					@include( 'user/accounts/cardProfile' )
 
 				</div>		
 			</div>

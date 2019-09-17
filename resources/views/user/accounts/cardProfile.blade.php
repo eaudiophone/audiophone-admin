@@ -1,5 +1,5 @@
 <center>
-	<img src="{{asset( config( 'assets.AVATAR' ) )}}" alt="avatar">
+	<img src="{{ asset( config( 'assets.AVATAR' ) )}}" alt="avatar">
 </center>
 
 <div class="card mt-5 mb-5">
@@ -55,7 +55,7 @@
 						<label for="name">Rol de aplicacion:</label>
 					</div>
 					<div class="col-sm-9">
-						<span>USER_ROLE || ADMIN_ROLE</span>
+						<span>USER_ROLE | ADMIN_ROLE</span>
 					</div>
 				</div>
 

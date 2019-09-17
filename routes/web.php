@@ -40,16 +40,16 @@ Route::get('recovery', function() {
 |
 */
 
-Route::get('profile', function() {
-	return view('user/profiles/index');
+Route::get('account', function() {
+	return view( 'user/accounts/index' );
 });
 
 Route::get('createUser', function () {
     return view('user/createUser');
 });
 
-Route::get('adminProfile', function() {
-	return view('user/profiles/adminProfile');
+Route::get('accountAdmin', function() {
+	return view('user/accounts/adminProfile');
 });
 
 /*
@@ -88,7 +88,7 @@ Route::get('admin', function() {
 });
 
 Route::get('profiles', function() {
-	return view('admin/profiles');
+	return view('admin/profiles/index');
 });
 
 Route::get('estadistic', function() {
@@ -100,7 +100,7 @@ Route::get('show', function() {
 });
 
 Route::get('days', function() {
-	return view('admin/days');
+	return view('admin/days/index');
 });
 
 Route::get('budget', function() {

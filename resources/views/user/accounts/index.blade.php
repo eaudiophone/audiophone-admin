@@ -22,7 +22,7 @@
 				<div class="offset-sm-1 col-sm-10">
 
 					<!-- Card User  -->
-					@include('user/profiles/cardProfile')
+					@include('user/accounts/cardProfile')
 
 				</div>		
 			</div>
