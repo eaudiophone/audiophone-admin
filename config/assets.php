@@ -24,5 +24,6 @@
 		'SPANISH' => 'js/vendor/es.js',
 		'USER' => 'css/user.css',
 		'AVATAR' => 'img/avatar_300x300.png',
-		'MODALS' => 'js/modals.js'
+		'MODALS' => 'js/modals.js',
+		'SWEETALERT' => 'js/vendor/sweetalert.min.js'
 	];

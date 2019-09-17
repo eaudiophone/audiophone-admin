@@ -31,7 +31,7 @@
         <label for="">Fecha del evento:</label> 
        </div>
       <div class="col-sm-9">
-        <input type="text" id="appointmentDate" class="form-control">
+        <input type="date" id="appointmentDate" class="form-control" min="2018-01-01" value="2019-06-01">
       </div>
 
     </div>
@@ -42,7 +42,7 @@
         <label for="">Nombre del evento:</label> 
       </div>
       <div class="col-sm-9">
-        <input type="text" id="title" class="form-control">
+        <input type="text" id="title" class="form-control" placeholder="nombre ...">
       </div>
 
     </div>
@@ -53,7 +53,7 @@
         <label for="description">Descripción:</label> 
       </div>
       <div class="col-sm-9">
-        <textarea id="description" class="form-control"></textarea>
+        <textarea id="description" class="form-control" placeholder="descripcion ..."></textarea>
       </div>
             
     </div>
@@ -64,7 +64,7 @@
         <label for="">Dirección del evento:</label> 
       </div>
       <div class="col-sm-9">
-        <textarea id="addressMeeting" class="form-control"></textarea>
+        <textarea id="addressMeeting" class="form-control" placeholder="dirección ..."></textarea>
       </div>
             
     </div>

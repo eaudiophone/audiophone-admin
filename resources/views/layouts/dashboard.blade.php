@@ -20,8 +20,7 @@
 		<!-- Bootstrap min.js -->
 		<script src="{{ asset( config('assets.BOOTSTRAP_JS') )}}"></script>
 		<script src="{{ asset( config( 'assets.CLOCKPICKER_JS' ) ) }}"></script>
-
-		<script src="{{ asset( config('assets.MOMENT_JS') )}}"></script>
 		<script src="{{ asset( config( 'assets.MODALS' ) )}}"></script>	
+		<script src="{{ asset( config( 'assets.SWEETALERT' ) ) }}"></script>
 	</body>
 </html>

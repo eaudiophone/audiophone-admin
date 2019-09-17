@@ -61,7 +61,7 @@
 
 				<div class="form-row pt-5 text-center">
 					<div class="col-sm-6">
-						<button type="submit" class="btn btn-success">
+						<button class="btn btn-success" type="submit">
 							<i class="fas fa-w fa-save"></i>		
 							Guardar cambios
 						</button>
@@ -86,9 +86,6 @@
 	var form = document.getElementById( 'form' );
 	var boton = document.getElementById( 'editar' );
 
-	document.addEventListener( 'DOMContentLoaded', activar );
-	boton.addEventListener( 'click', activar );
-
 	function activar() {
 
 		for ( var i = 2; i < form.length; i++ ) {
@@ -103,6 +100,21 @@
 				form[i].disabled = false;
 			}
 		}
+
 	}
+
+	function message() {
+
+		swal({
+			title: 'usuario actualizado',
+			icon: 'success' 
+		});
+	}
+
+
+	document.addEventListener( 'DOMContentLoaded', activar );
+	boton.addEventListener( 'click', activar );
+
+	form.addEventListener( 'submit', message );
 
 </script>

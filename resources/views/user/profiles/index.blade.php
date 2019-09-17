@@ -13,14 +13,6 @@
 		align-items-center pb-2 mb-3 border-bottom">
 				
 			<h1>Perfil del Usuario</h1>
-					
-			<!-- grupo de botones -->
-
-			<div class="btn-toolbar mb-2 mb-md-0">
-				<div>
-					<!--<button class="btn btn-sm btn-outline-secondary" id="editar">Editar Perfil</button> -->
-				</div>
-			</div>
 		</div>
 		
 		<!-- Contenido -->

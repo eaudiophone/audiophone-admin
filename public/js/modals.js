@@ -1,3 +1,5 @@
+var swal; // sweetAlert
+
 var optionsClockPicker = {
 
     placement: 'bottom',
@@ -10,7 +12,7 @@ var optionsClockPicker = {
 
     		var beginHour = $( '#startTime' ).val();
 			var finalHour = $( '#finalTime' ).val();
-			
+
         	var arraySplit = beginHour.split( ':' );
         	var arraySplit2 = finalHour.split( ':' ); 
 
@@ -28,38 +30,36 @@ var optionsClockPicker = {
     	}
     }
 };
-
-var button = document.getElementById( 'modalEvent' );
       
 function openModal() {
 	
-	var baseURL = button.baseURI.split('/');
+	var baseURL = $( '#modalEvent' ).prop( 'baseURI' ).split( '/' );
 	var url = baseURL[ 3 ];
 
 	if ( url === 'rental' ) {
 
-		$( '#titleModal' ).prop( 'innerHTML', 'Nuevo Evento de Alquiler' );
-		getFormEmpty();
+		$( '#titleModal' ).prop( 'innerHTML', 'Nuevo Alquiler' );
 	}
 
 	else {
 		
-		$('#titleModal').prop( 'innerHTML', 'Nuevo Evento de Grabación' );
-		getFormEmpty();
+		$( '#titleModal' ).prop( 'innerHTML', 'Nueva Grabación' );
 	}
 
-	$('#modalEvents').modal();	
+	$('#modalEvents').modal();
+	getFormEmpty();	
 }
 
 function getFormEmpty() {
 
-	$( '#startTime' ).val('');
-	$( '#finalTime' ).val('');
-	$( '#totalHours' ).val('');
-	$( '#appointmentDate' ).val('');
-	$( '#title' ).val('');
-	$( '#description' ).val('');
-	$('#addressMeeting').val('');
+	$( '#startTime' ).val( null );
+	$( '#finalTime' ).val( null );
+	$( '#totalHours' ).val( null );
+	$( '#appointmentDate' ).val( null );
+	$( '#title' ).val( null );
+	$( '#description' ).val( null );
+	$( '#addressMeeting' ).val( null );
+
 }
 
 function calculateHours( begin, final, minutes ) {
@@ -83,15 +83,27 @@ function calculateHours( begin, final, minutes ) {
 
 	else {
 
-		console.log( 'opcion incorrecta' );
+		swal({
+			title: 'opcion invalida',
+			text: 'La hora final no puede ser inferior a la hora de inicio',
+			icon: 'warning',
+			button: 'Salir',
+		});
+
+		$( '#totalHours' ).val('');
+		$( '#finalTime' ).val('');
 	}
 }
 
-// addEventListener DOMContentLoaded
+$( '#modalEvent' ).click( openModal );
+
 $( document ).ready( function() {
 
 	$('.clockpicker').clockpicker( optionsClockPicker );
 }); 
 
-// addEventListener  click
-$( button ).click( openModal );
+// save
+$( '#save' ).click( function()  {
+	
+	$( '#modalEvents' ).modal( 'toggle' );
+});
