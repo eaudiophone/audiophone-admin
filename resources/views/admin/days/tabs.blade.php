@@ -55,8 +55,7 @@
 			
 			</table>
 
-			<button class="btn btn-primary btn-sm mb-3" data-toggle="modal" 
-			data-target="#modal_D_Grabacion">
+			<button class="btn btn-primary btn-sm mb-3" id="btnGrabacion">
 				<i class="fas fa-w fa-edit"></i>
 				Editar D. de Grabación
 			</button>
@@ -108,8 +107,7 @@
 			
 			</table>
 
-			<button class="btn btn-primary btn-sm mb-3" data-toggle="modal" 
-								data-target="#modal_D_Diagnostico">
+			<button class="btn btn-primary btn-sm mb-3" id="btnAlquiler">
 				<i class="fas fa-w fa-edit"></i>
 				Editar D. de Diagnosticos
 			</button>

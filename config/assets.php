@@ -24,7 +24,8 @@
 		'SPANISH' => 'js/vendor/es.js',
 		'USER' => 'css/user.css',
 		'AVATAR' => 'img/avatar_300x300.png',
-		'MODALS' => 'js/modals.js',
+		'MODAL_EVENTS' => 'js/modalEvents.js',
+		'MODAL_DAYS' => 'js/modalDays.js',
 		'SWEETALERT' => 'js/vendor/sweetalert.min.js',
 		'TABLE' => 'css/table.css',
 		'DAYS' => 'css/days.css'
