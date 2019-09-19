@@ -18,7 +18,7 @@
                     <h5 class="card-title">Alquiler {{ $i }}</h5>
                   </div>
 
-                  <div class="col-sm-2 text-center">
+                  <div class="col-sm-1 text-right">
                     <i class="fas fa-w fa-times pointer"></i>
                   </div>
                 </div>
