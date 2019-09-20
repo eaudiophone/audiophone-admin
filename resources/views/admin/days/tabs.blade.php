@@ -2,7 +2,7 @@
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-records" role="tab" aria-controls="nav-home" aria-selected="true">
-    	Grabaciones
+    	Grabación
 	</a>
     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-rental" role="tab" aria-controls="nav-profile" aria-selected="false">
     	Alquiler
@@ -17,7 +17,7 @@
 	<div class="card">
 		<div class="card-header" style="background-color: #f7eda0">
 			<i class="fas fa-w fa-microphone" style="padding-right: 10px;"></i>
-			grabaciones
+			grabación
 		</div>
 
 		<div class="card-body p-0">

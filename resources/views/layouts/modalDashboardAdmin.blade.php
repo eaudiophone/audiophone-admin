@@ -161,10 +161,9 @@ aria-hidden="true">
         </button>
       </div>
       <div class="modal-body">
-        <p class="text-justified">
-          Bienvenido al modulo del presupuesto aqui podrás colocar y modificar los elementos, precios 
-          los servicios al momento de generar el presupuesto<br><br>
-          <!-- Formulario aqui -->
+        <p class="text-justify">
+          Bienvenido al modulo del presupuesto aqui podrás colocar y modificar los precios y tarifas los servicios al momento de para armar tu presupuesto al cliente. Una vez establecidos los precios solo 
+          debe presionar la opcion <strong>Generar presupuesto</strong> y seleccionar que tipo es que desea exportar a formato PDF
         </p>
       </div>
       <div class="modal-footer">

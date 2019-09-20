@@ -26,7 +26,7 @@
 		</div> 
 
 		<!-- buscador de usuarios: -->
-		@include('admin.search')
+		@include('admin/profiles/search')
 		@include( 'admin/profiles/tableUsers' )
 
 		<!-- incluir la paginación -->
@@ -42,22 +42,34 @@
 
 			for ( var i = 0; i < boton.length; i++ ) {
 
-				boton[i].onclick = message;
+				boton[i].onclick = confirmAdmin;
 			}
 
 			for ( var i = 0; i <  boton2.length; i++ ) {
 
-				boton2[i].onclick = message2;
+				boton2[i].onclick = confirmDelete;
 			}
 
 		});
 		
-		function message() {
-			alert( 'admin' );
+		function confirmAdmin() {
+			
+			var response = confirm( '¿Esta seguro de convertir en admin este usuario?' );
+
+			if ( response ) {
+
+				alert( 'actualizacion exitosa' ); 
+			}
 		}
 
-		function message2() {
-			alert( 'delete' );
+		function confirmDelete() {
+
+			var response = confirm( '¿Esta seguro de eliminar este usuario?' );
+
+			if ( response ) {
+
+				alert( 'usuario eliminado' ); 
+			}
 		}
 
 	</script>

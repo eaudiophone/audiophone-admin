@@ -2,10 +2,10 @@
 @section('title', 'budget')
 @section('content')
 
-	<link rel="stylesheet" href="{{asset('css/budget.css')}}">
+	<link rel="stylesheet" href="{{ asset( config( 'assets.BUDGET' ) )}}">
 
 	<!-- Contenido -->
-	<main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
+	<div class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4">
 			
 		<!-- Titulo -->
 		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap 
@@ -16,120 +16,22 @@
 			<!-- grupo de botones -->
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div class="btn-group mr-2">
-					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
+					<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" 
 					data-target="#modal_Presupuesto">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
 					</button>
-					<button type="button" class="btn btn-sm btn-default">
-						<i class="fas fa-w fa-clipboard"></i>
-						Generar Presupuesto
-					</button>
 				</div>
 			</div>
 		</div>
 
+		<h3 class="pb-2">Precios y tarifas:</h3>
 
-		<!-- Preupuesto grabación -->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="card">
-						<div class="card-header">
-							Presupuesto de grabación:
-						</div>
-						<!-- Tabla -->
-						<table class="table">
-							<thead class="text-center thead-dark">
-								<th>#:</th>
-								<th>Item:</th>
-								<th>Precio:</th>
-							</thead>
-							<tbody class="text-center">
-								<tr>
-									<td>1</td>
-									<td>Item1</td>
-									<td>Precio1</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Item2</td>
-									<td>Precio2</td>
-								</tr>
-							</tbody>
-						</table>
+		@include( 'admin/budget/tabs' )
+		@include( 'admin/budget/modalBudget' ) <!-- modals -->
 
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item text-center">
-								<a href="" class="btn btn-success btn-sm">
-									<i class="fas fa-w fa-plus"></i>
-									Nuevo
-								</a>
-								<a href="" class="btn btn-primary btn-sm">
-									<i class="fas fa-w fa-edit"></i>
-									Editar
-								</a>
-								<a href="" class="btn btn-danger btn-sm">
-									<i class="fas fa-w fa-eraser"></i>
-									Eliminar
-								</a>
-								
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+	</div>
 
-		<!-- Presupuesto alquiler -->
-		<div class="container" id="alquiler">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="card">
-						<div class="card-header">
-							Presupuesto de alquiler:
-						</div>
-						<!-- Tabla -->
-						<table class="table">
-							<thead class="text-center thead-dark">
-								<th>#:</th>
-								<th>Item:</th>
-								<th>Precio:</th>
-							</thead>
-							<tbody class="text-center">
-								<tr>
-									<td>1</td>
-									<td>Item1</td>
-									<td>Precio1</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Item2</td>
-									<td>Precio2</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item text-center">
-								<a href="" class="btn btn-success btn-sm">
-									<i class="fas fa-w fa-plus"></i>
-									Nuevo
-								</a>
-								<a href="" class="btn btn-primary btn-sm">
-									<i class="fas fa-w fa-edit"></i>
-									Editar
-								</a>
-								<a href="" class="btn btn-danger btn-sm">
-									<i class="fas fa-w fa-eraser"></i>
-									Eliminar
-								</a>
-								
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+	<script src="{{ asset( config( 'assets.MODAL_BUDGET' ) ) }}"></script>
 
 @endsection

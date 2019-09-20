@@ -76,6 +76,16 @@ function getFormEmpty() {
 	$( '#addressMeeting' ).val( null );
 }
 
+function confirmDelete() {
+
+	var response = confirm( '¿Esta seguro de eliminar este evento?' );
+
+	if ( response ) {
+
+		alert( 'evento eliminado' ); 
+	}
+}
+
 $( document ).ready( function() {
 
 	var optionsClockPicker = {
@@ -114,3 +124,6 @@ $( '#save' ).click( function()  {
 	
 	$( '#modalEvents' ).modal( 'toggle' );	
 });
+
+// delete
+$( '.pointer' ).click( confirmDelete );

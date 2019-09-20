@@ -26,7 +26,9 @@
 		'AVATAR' => 'img/avatar_300x300.png',
 		'MODAL_EVENTS' => 'js/modalEvents.js',
 		'MODAL_DAYS' => 'js/modalDays.js',
+		'MODAL_BUDGET' => 'js/modalBudget.js',
 		'SWEETALERT' => 'js/vendor/sweetalert.min.js',
 		'TABLE' => 'css/table.css',
-		'DAYS' => 'css/days.css'
+		'DAYS' => 'css/days.css',
+		'BUDGET' => 'css/budget.css'
 	];
