@@ -104,6 +104,6 @@ Route::get('days', function() {
 });
 
 Route::get('budget', function() {
-	return view('admin/budget');
+	return view('admin/budget/index');
 });
 

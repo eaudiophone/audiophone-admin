@@ -29,13 +29,6 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					
-				</div>
-			</div>
-		</div>
 
 		<!-- Preupuesto grabación -->
 		<div class="container">
@@ -95,57 +88,6 @@
 					<div class="card">
 						<div class="card-header">
 							Presupuesto de alquiler:
-						</div>
-						<!-- Tabla -->
-						<table class="table">
-							<thead class="text-center thead-dark">
-								<th>#:</th>
-								<th>Item:</th>
-								<th>Precio:</th>
-							</thead>
-							<tbody class="text-center">
-								<tr>
-									<td>1</td>
-									<td>Item1</td>
-									<td>Precio1</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Item2</td>
-									<td>Precio2</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item text-center">
-								<a href="" class="btn btn-success btn-sm">
-									<i class="fas fa-w fa-plus"></i>
-									Nuevo
-								</a>
-								<a href="" class="btn btn-primary btn-sm">
-									<i class="fas fa-w fa-edit"></i>
-									Editar
-								</a>
-								<a href="" class="btn btn-danger btn-sm">
-									<i class="fas fa-w fa-eraser"></i>
-									Eliminar
-								</a>
-								
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Presupuesto diagnostico -->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="card">
-						<div class="card-header">
-							Presupuesto de diagnostico:
 						</div>
 						<!-- Tabla -->
 						<table class="table">
