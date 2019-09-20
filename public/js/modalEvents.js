@@ -1,31 +1,3 @@
-var optionsClockPicker = {
-
-    placement: 'bottom',
-    align: 'left',
-    autoclose: true,
-
-    afterDone: function() {
-
-    	if ( ( $( '#startTime' ).val() ) && ( $( '#finalTime' ).val() )  ) {
-
-    		var beginHour = $( '#startTime' ).val().split( ':' );
-			var finalHour = $( '#finalTime' ).val().split( ':' );
-
-			var minutes = parseInt( finalHour[1] );
-
-        	beginHour = parseInt( beginHour[0] );
-        	finalHour = parseInt( finalHour[0] );
-        	
-        	calculateHours( beginHour, finalHour, minutes );
-    	}
-
-    	else {
-
-    		return;
-    	}
-    }
-};
-      
 function openModal( method ) {
 	
 	var baseURL = $( '#modalEvent' ).prop( 'baseURI' ).split( '/' );
@@ -105,6 +77,34 @@ function getFormEmpty() {
 }
 
 $( document ).ready( function() {
+
+	var optionsClockPicker = {
+
+    	placement: 'bottom',
+    	align: 'left',
+    	autoclose: true,
+
+    	afterDone: function() {
+
+    		if ( ( $( '#startTime' ).val() ) && ( $( '#finalTime' ).val() )  ) {
+
+    			var beginHour = $( '#startTime' ).val().split( ':' );
+				var finalHour = $( '#finalTime' ).val().split( ':' );
+
+				var minutes = parseInt( finalHour[1] );
+
+        		beginHour = parseInt( beginHour[0] );
+        		finalHour = parseInt( finalHour[0] );
+        	
+        		calculateHours( beginHour, finalHour, minutes );
+    		}
+
+    		else {
+
+    			return;
+    		}
+    	}
+	};
 
 	$('.clockpicker').clockpicker( optionsClockPicker );
 }); 

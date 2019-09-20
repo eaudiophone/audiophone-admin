@@ -15,6 +15,10 @@ aria-hidden="true">
 
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">
+          <i class="fas fa-w fa-edit"></i>
+          Actualizar
+        </button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
       </div>
     </div>

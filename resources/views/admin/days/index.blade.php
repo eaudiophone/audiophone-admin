@@ -30,7 +30,7 @@
 
 	</div>	
 	
-	<!-- contro del modal  -->
+	<!-- control del modal  -->
 	<script src="{{ asset( config('assets.MODAL_DAYS') ) }}"></script>
 
 @endsection
