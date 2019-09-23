@@ -31,13 +31,7 @@
 							</a>
 						</li>
 						<h6>Más información</h6>
-						<li class="nav-item">
-							<a href="{{ url('estadistic') }}" class="nav-link">
-								<i class="fas fa-w fa-chart-line"></i>
-								<span>Estadisticas</span>
-							</a>
-						</li>
-
+	
 						<li class="nav-item">
 							<a href="#" class="nav-link" data-toggle="modal" data-target="#modalInfo">
 								<i class="fas fa-w fa-info"></i>

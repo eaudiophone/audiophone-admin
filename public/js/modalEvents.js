@@ -1,5 +1,6 @@
 function openModal( method ) {
 	
+	// toma la url del boton
 	var baseURL = $( '#modalEvent' ).prop( 'baseURI' ).split( '/' );
 	var url = baseURL[ 3 ];
 
@@ -15,10 +16,16 @@ function openModal( method ) {
 
 	if ( method === 'nuevo' ) {
 
+		$('#edit').prop( 'hidden', true );
+		$('#save').prop( 'hidden', false );
+
 		getFormEmpty();
 	}
 
 	else {
+
+		$('#edit').prop( 'hidden', false );
+		$('#save').prop( 'hidden', true );
 
 		getData();
 	}
@@ -118,12 +125,6 @@ $( document ).ready( function() {
 
 	$('.clockpicker').clockpicker( optionsClockPicker );
 }); 
-
-// save
-$( '#save' ).click( function()  {
-	
-	$( '#modalEvents' ).modal( 'toggle' );	
-});
 
 // delete
 $( '.pointer' ).click( confirmDelete );

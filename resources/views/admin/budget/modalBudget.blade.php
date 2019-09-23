@@ -11,6 +11,8 @@ aria-hidden="true">
       </div>
       <div class="modal-body">
 
+        @include( 'admin/budget/form' )
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-info" data-dismiss="modal" id="edit">

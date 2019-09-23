@@ -11,6 +11,7 @@ function openModal( method ) {
 		case 'addRecord': 
 
 			$('#title').prop( 'innerHTML', 'Nueva tarifa de grabación' );
+			$('#tarifa').prop( 'innerHTML', 'Valor de las horas' );
 			$('#save').prop( 'hidden', false );
 			$('#edit').prop( 'hidden', true );
 
@@ -19,24 +20,30 @@ function openModal( method ) {
 		case 'addRental':
 
 			$('#title').prop( 'innerHTML', 'Nueva tarifa de alquiler' );
+			$('#tarifa').prop( 'innerHTML', 'Costo de la unidad' );
 			$('#save').prop( 'hidden', false );
 			$('#edit').prop( 'hidden', true );
+			
 
 		break;
 
 		case 'editRecord': 
 
 			$('#title').prop( 'innerHTML', 'Editar tarifa de grabación' );
+			$('#tarifa').prop( 'innerHTML', 'Valor de horas' );
 			$('#save').prop( 'hidden', true );
 			$('#edit').prop( 'hidden', false );
+			
 
 		break;
 
 		case 'editRental':
 
 			$('#title').prop( 'innerHTML', 'Editar tarifa de alquiler' );
+			$('#tarifa').prop( 'innerHTML', 'Costo de la unidad' );
 			$('#save').prop( 'hidden', true );
 			$('#edit').prop( 'hidden', false );
+			
 
 		break;
 	}
@@ -51,10 +58,5 @@ function confirmDelete() {
 	if ( response ) {
 
 		alert( 'tarifa eliminada' ); 
-	}
-
-	else {
-
-		alert( 'todo bien' );
 	}
 }

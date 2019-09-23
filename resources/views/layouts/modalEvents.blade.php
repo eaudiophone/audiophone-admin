@@ -15,7 +15,14 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="save">Guardar</button>
+          <button type="button" class="btn btn-success" id="save">
+            <i class="fas fa-w fa-save"></i>
+            Guardar
+          </button>
+          <button type="button" class="btn btn-info" id="edit">
+            <i class="fas fa-w fa-edit"></i>
+            Editar
+          </button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </div>
     </div>
