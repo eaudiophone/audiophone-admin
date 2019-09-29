@@ -30,7 +30,6 @@ Route::get('recovery', function() {
 	return view('user/recoveryPassword');
 });
 
-
 /*
 |--------------------------------------------------------------------------
 | Route User
@@ -40,17 +39,20 @@ Route::get('recovery', function() {
 |
 */
 
-Route::get('account', function() {
-	return view( 'user/accounts/index' );
+Route::get('accountAdmin', function() {
+	return view('user/accounts/adminProfile');
 });
+
 
 Route::get('createUser', function () {
     return view('user/createUser');
 });
 
-Route::get('accountAdmin', function() {
-	return view('user/accounts/adminProfile');
-});
+Route::get('account/{id}', 'UserController@consultUser' );
+
+Route::delete( 'account/{id}', 'UserController@deleteUser' );
+
+
 
 /*
 |--------------------------------------------------------------------------

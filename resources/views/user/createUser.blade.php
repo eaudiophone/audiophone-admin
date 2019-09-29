@@ -30,7 +30,9 @@
 			<div class="card-body">
 
 				<!-- Form User  -->
-				<form action="" method="POST">
+				<form action="{{ url('createUser') }}" method="POST">
+
+					{{ csrf_field() }}
 
 					<div class="form-group">
 						<div class="form-row">

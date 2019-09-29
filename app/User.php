@@ -11,18 +11,24 @@ class User extends Model
  *   Declaración Personalizada de Tabla User *
  *********************************************
  */
-	protected $table = 'User';
+	protected $table = 'users';
 
 /*
  ****************
  *   Atributos  *
  ****************
  */
-	protected $primaryKey = 'idUser';
+	protected $primaryKey = 'id';
 
 	public $timestamps = false;
 
-	protected $fillable = ['firstName', 'lastName', 'age', 'socialNetworks', 'address'];
+	protected $fillable = [
+		'email', 
+		'password', 
+		'rol', 
+		'state', 
+		'registrationDate'
+	];
 
 	protected $guarded = [];
 
