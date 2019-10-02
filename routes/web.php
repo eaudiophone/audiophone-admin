@@ -38,20 +38,18 @@ Route::get('recovery', function() {
 | Ruta del modulo del Usuario
 |
 */
-
-Route::get('accountAdmin', function() {
-	return view('user/accounts/adminProfile');
-});
-
-
 Route::get('createUser', function () {
     return view('user/createUser');
 });
 
-Route::get('account/{id}', 'UserController@consultUser' );
 
+Route::post('account', 'UserController@createUser');
+Route::get('account/{profile}/{id}', 'UserController@consultUser' );
+Route::put( 'account/{id}', 'UserController@modifyUser' );
+
+
+// terminar
 Route::delete( 'account/{id}', 'UserController@deleteUser' );
-
 
 
 /*

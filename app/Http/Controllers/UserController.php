@@ -9,17 +9,54 @@ class UserController extends Controller
 {
     public function createUser( Request $request ) {
 
-    	return 'register';
+        // nueva instancia de usuario
+        User::insert([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+            'role' => 'USER_ROLE',
+            'state' => true,
+            'created_at' => date('Y-m-d h:i:s', time()),
+            'updated_at' => date('Y-m-d h:i:s', time())
+        ]);
+      
+        return 'USUARIO REGISTRADO EXITOSAMENTE';
+
     }
 
     public function modifyUser( Request $request, $id ) {
 
-    	return 'actualizar';
+    	User::where('id', $id)
+            ->where( 'state', true )
+            ->update([
+                'name' => $request->name,
+                'email' => $request->email,
+                'updated_at' => date('Y-m-d h:i:s', time())
+            ]);
+
+        return 'USUARIO ACTUALIZADO EXITOSAMENTE';
     }
 
-    public function consultUser( $id ) {
+    public function consultUser( $profile, $id ) {
 
-    	return 'User: '.$id;
+    	$user = User::findOrFail( $id );
+        
+        // dd( $user );
+
+        if ( $profile == 'admin' ) {
+
+            return view( 'user/accounts/adminProfile' )->with( 'user', $user ); 
+        }
+
+        else if ( $profile == 'user' ) {
+
+            return view( 'user/accounts/index' )->with( 'user', $user ); 
+        }
+
+        else {
+
+            back();
+        }
     }
 
     public function deleteUser( $id ) {

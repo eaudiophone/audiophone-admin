@@ -23,11 +23,13 @@ class User extends Model
 	public $timestamps = false;
 
 	protected $fillable = [
+		'name',
 		'email', 
 		'password', 
 		'rol', 
 		'state', 
-		'registrationDate'
+		'updated_at',
+		'created_at',
 	];
 
 	protected $guarded = [];

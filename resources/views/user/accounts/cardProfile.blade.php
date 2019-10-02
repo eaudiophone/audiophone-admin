@@ -18,7 +18,7 @@
 						
 	<div class="card-body">
 
-		<form action="" method="POST" id="form">
+		<form action="{{ url( 'account' ) }}" method="POST" id="form">
 					
 			<!-- campos de seguridad -->
 			{{ method_field( 'PUT' ) }}
@@ -44,7 +44,7 @@
 						<label for="name">correo:</label>
 					</div>
 					<div class="col-sm-9">
-						<input type="email" id="name" name="name" class="form-control"
+						<input type="email" id="email" name="email" class="form-control"
 						placeholder="correo ..." required autofocus>		
 					</div>
 				</div>	
@@ -55,7 +55,7 @@
 						<label for="name">Rol de aplicacion:</label>
 					</div>
 					<div class="col-sm-9">
-						<span>USER_ROLE | ADMIN_ROLE</span>
+						<span id="role"></span>
 					</div>
 				</div>
 
@@ -86,7 +86,10 @@
 	var form = document.getElementById( 'form' );
 	var boton = document.getElementById( 'editar' );
 
-	function activar() {
+	document.addEventListener( 'DOMContentLoaded', setDataDB );
+	boton.addEventListener( 'click', activate );
+
+	function activate() {
 
 		for ( var i = 2; i < form.length; i++ ) {
 
@@ -100,10 +103,20 @@
 				form[i].disabled = false;
 			}
 		}
-
 	}
 
-	document.addEventListener( 'DOMContentLoaded', activar );
-	boton.addEventListener( 'click', activar );
+	function setDataDB() {
+
+		// concatena la ruta action url
+		form.action += '/{{ $user->id }}';
+
+		$( '#name' ).prop( 'value', '{{ $user->name }}' );
+		$( '#email' ).prop( 'value', '{{ $user->email }}' );
+		$( '#role' ).prop( 'innerHTML', '{{ $user->role }}' );
+
+		console.log( form );
+
+		activate();
+	}
 
 </script>
