@@ -42,10 +42,11 @@ Route::get('createUser', function () {
     return view('user/createUser');
 });
 
+Route::get('profiles', 'UserController@listUsers' );
 
 Route::post('account', 'UserController@createUser');
 Route::get('account/{profile}/{id}', 'UserController@consultUser' );
-Route::put( 'account/{id}', 'UserController@modifyUser' );
+Route::put( 'account/{method}/{id}', 'UserController@modifyUser' );
 
 
 // terminar
@@ -87,9 +88,7 @@ Route::get('admin', function() {
 	return view('admin/calendar/index');
 });
 
-Route::get('profiles', function() {
-	return view('admin/profiles/index');
-});
+
 
 Route::get('estadistic', function() {
 	return view('admin/estadistic');

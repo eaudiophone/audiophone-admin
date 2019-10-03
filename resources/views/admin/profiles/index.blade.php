@@ -54,11 +54,11 @@
 		
 		function confirmAdmin() {
 			
-			var response = confirm( '¿Esta seguro de convertir en admin este usuario?' );
+			var response = confirm( '¿Esta seguro de dar privilegios a este usuario?' );
 
 			if ( response ) {
 
-				alert( 'actualizacion exitosa' ); 
+				// codigo de actualización 
 			}
 		}
 
@@ -68,7 +68,7 @@
 
 			if ( response ) {
 
-				alert( 'usuario eliminado' ); 
+				// codigo de eliminación
 			}
 		}
 

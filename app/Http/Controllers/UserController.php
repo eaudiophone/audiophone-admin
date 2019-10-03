@@ -24,15 +24,27 @@ class UserController extends Controller
 
     }
 
-    public function modifyUser( Request $request, $id ) {
+    public function modifyUser( Request $request, $method, $id ) {
 
-    	User::where('id', $id)
-            ->where( 'state', true )
-            ->update([
-                'name' => $request->name,
-                'email' => $request->email,
-                'updated_at' => date('Y-m-d h:i:s', time())
+       if ( $method == 'changeRole' ) {
+
+            User::where('id', $id)
+                ->where( 'state', true )
+                ->update([
+                    'role' => $request->role
             ]);
+        }
+
+        else {
+
+            User::where('id', $id)
+                ->where( 'state', true )
+                ->update([
+                    'name' => $request->name,
+                    'email' => $request->email,
+                    'updated_at' => date('Y-m-d h:i:s', time())
+            ]);
+        }
 
         return 'USUARIO ACTUALIZADO EXITOSAMENTE';
     }
@@ -61,6 +73,16 @@ class UserController extends Controller
 
     public function deleteUser( $id ) {
 
-    	return 'Usuario eliminado';
+    	return 'USUARIO ELIMINADO EXITOSAMENTE';
+    }
+
+    public function listUsers() {
+
+        $users = User::where( 'state', true )
+            ->orderBy( 'id', 'asc' )
+            ->take( 10 )
+            ->get();
+
+        return view( 'admin/profiles/index' )->with( 'users', $users );
     }
 }

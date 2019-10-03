@@ -13,12 +13,12 @@
 		</thead>
 		<tbody id="center">
 
-			@for( $i = 1; $i <= 5; $i++ )
+			@forelse( $users as $user )
 				<tr>
-					<td> <strong> {{ $i }} </strong></td>
-					<td>test</td>
-					<td>test@test.com</td>
-					<td>USER_ROLE</td>
+					<td> <strong>{{ $user->id }}</strong></td>
+					<td>{{ $user->name }}</td>
+					<td>{{ $user->email }}</td>
+					<td>{{ $user->role }}</td>
 					<td>
 						<button type="button" class="btn btn-sm btn-warning admin"> 
 							<i class="fas fa-w fa-user"></i>
@@ -28,7 +28,11 @@
 						</button>
 					</td>
 				</tr>
-			@endfor
+				@empty
+					<div>
+						<p>No se hallaron registros</p>
+					</div>
+			@endforelse
 
 		</tbody>
 	</table>

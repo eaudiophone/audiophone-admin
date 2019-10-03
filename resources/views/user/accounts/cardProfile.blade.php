@@ -18,7 +18,7 @@
 						
 	<div class="card-body">
 
-		<form action="{{ url( 'account' ) }}" method="POST" id="form">
+		<form action="{{ url( 'account/updateUser' ) }}" method="POST" id="form">
 					
 			<!-- campos de seguridad -->
 			{{ method_field( 'PUT' ) }}
