@@ -31,7 +31,8 @@ class UserController extends Controller
             User::where('id', $id)
                 ->where( 'state', true )
                 ->update([
-                    'role' => $request->role
+                    'role' => $request->role,
+                    'updated_at' => date('Y-m-d h:i:s', time())
             ]);
         }
 
@@ -71,9 +72,15 @@ class UserController extends Controller
         }
     }
 
-    public function deleteUser( $id ) {
+    public function deleteUser(  $id ) {
 
-    	return 'USUARIO ELIMINADO EXITOSAMENTE';
+    	User::where( 'id', $id )
+            ->where( 'state', true )
+            ->update([
+                'state' => false
+            ]);
+
+        return 'USUARIO ELIMINADO EXITOSAMENTE';
     }
 
     public function listUsers() {

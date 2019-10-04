@@ -18,12 +18,16 @@
 					<td> <strong>{{ $user->id }}</strong></td>
 					<td>{{ $user->name }}</td>
 					<td>{{ $user->email }}</td>
-					<td>{{ $user->role }}</td>
+					<td id="role">{{ $user->role }}</td>
 					<td>
-						<button type="button" class="btn btn-sm btn-warning admin"> 
+						<button type="button" class="btn btn-sm btn-warning"
+						onclick="openModalUpdate( {{ $user->id }}, '{{ $user->name }}',
+						'{{ url( 'account' ) }}' )"> 
 							<i class="fas fa-w fa-user"></i>
 						</button>
-						<button class="btn btn-sm btn-danger delete">
+						<button class="btn btn-sm btn-danger delete" 
+							onclick="openModalDelete( {{ $user->id }}, '{{ $user->name }}',
+							'{{ url( 'account' ) }}' )"> 
 							<i class="fas fa-w fa-trash"></i>
 						</button>
 					</td>
@@ -33,7 +37,10 @@
 						<p>No se hallaron registros</p>
 					</div>
 			@endforelse
-
 		</tbody>
 	</table>
 </div>
+
+<script src="{{ asset( config( 'assets.MODAL_CONFIRM' ) ) }}"></script>
+
+@include( 'admin/profiles/modalConfirm' )

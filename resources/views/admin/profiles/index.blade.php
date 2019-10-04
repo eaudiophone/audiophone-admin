@@ -32,46 +32,5 @@
 		<!-- incluir la paginación -->
 		
 	</div>
-
-	<script>
-
-		document.addEventListener( 'DOMContentLoaded', function() {
-
-			var boton = document.getElementsByClassName( 'admin' );
-			var boton2 = document.getElementsByClassName( 'delete' );
-
-			for ( var i = 0; i < boton.length; i++ ) {
-
-				boton[i].onclick = confirmAdmin;
-			}
-
-			for ( var i = 0; i <  boton2.length; i++ ) {
-
-				boton2[i].onclick = confirmDelete;
-			}
-
-		});
-		
-		function confirmAdmin() {
-			
-			var response = confirm( '¿Esta seguro de dar privilegios a este usuario?' );
-
-			if ( response ) {
-
-				// codigo de actualización 
-			}
-		}
-
-		function confirmDelete() {
-
-			var response = confirm( '¿Esta seguro de eliminar este usuario?' );
-
-			if ( response ) {
-
-				// codigo de eliminación
-			}
-		}
-
-	</script>
 		
 @endsection

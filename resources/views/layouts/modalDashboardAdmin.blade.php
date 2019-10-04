@@ -49,29 +49,6 @@ aria-hidden="true">
   </div>
 </div>
 
-<!-- Modal de las estadisticas de la aplicacion -->
-<div class="modal fade" tab-index="-1" role="dialog" id="modalEstadistica" aria-labelledby="modal09"
-aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal09">Estadísticas de la aplicación</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="text-justified">
-          En esta sección puedes consultar las estadísticas generadas por las actividad de los
-          usuarios que solicitan tus servicios. 
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>  
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Añadir perfiles del administrador -->
 <div class="modal fade" tab-index="-1" role="dialog" id="modalPAdministrador" aria-labelledby="modal10"

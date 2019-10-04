@@ -31,6 +31,7 @@
 		'MODAL_DAYS' => 'js/modalDays.js',
 		'MODAL_BUDGET' => 'js/modalBudget.js',
 		'MODAL_CALENDAR' => 'js/modalCalendar.js',
+		'MODAL_CONFIRM' =>'js/modalConfirm.js',
 		'SWEETALERT' => 'js/vendor/sweetalert.min.js',
 		'TABLE' => 'css/table.css',
 		'DAYS' => 'css/days.css',
