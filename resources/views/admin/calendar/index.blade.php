@@ -13,7 +13,7 @@
 			<!-- Grupo de botones -->
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div>
-					<button type="button" class="btn btn-sm btn-info" data-toggle="modal" 
+					<button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" 
 					data-target="#modalAgenda">
 						<i class="fas fa-w fa-info-circle"></i>
 						Información
@@ -23,6 +23,9 @@
 		</div>
 		
 		<!-- importa el calendario -->
-		@include('layouts.calendar')
+		@include('admin/calendar/calendar')	
+		@include('admin/calendar/modalCalendar')
+
+		<script src="{{ asset( config( 'assets.MODAL_CALENDAR' ) ) }}"></script>
 
 @endsection 

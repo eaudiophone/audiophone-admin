@@ -30,7 +30,9 @@
 			<div class="card-body">
 
 				<!-- Form User  -->
-				<form action="" method="POST">
+				<form action="{{ url('account') }}" method="POST">
+
+					{{ csrf_field() }}
 
 					<div class="form-group">
 						<div class="form-row">
@@ -83,6 +85,19 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+
+		// SOLO DATOS DE PRUEBA. ELIMINAR EN PRODUCCION
+		
+		document.addEventListener( 'DOMContentLoaded', function() {
+
+			document.getElementById( 'name' ).value = 'test';
+			document.getElementById( 'email' ).value = 'test1@test1.com';
+			document.getElementById( 'password' ).value = '12345678';
+		});
+
+	</script>
 
 	@include( 'layouts/backOptions' )
 

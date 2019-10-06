@@ -1,4 +1,4 @@
-	<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
 
 		<!-- Logo de la empresa -->
 		<a href="" class="navbar-brand mr-1">Audiophone</a>	
@@ -42,7 +42,7 @@
 					<i class="fas fa-user-circle fa-fw"></i>
 				</a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<a href="{{ url('account/user/1') }}" class="dropdown-item">Perfil</a>
+					<a href="{{ url('account/admin/1') }}" class="dropdown-item">Perfil</a>
 					<div class="dropdown-divider"></div>
 					<a href="{{ url('/') }}" class="dropdown-item">Salir</a>
 				</div>

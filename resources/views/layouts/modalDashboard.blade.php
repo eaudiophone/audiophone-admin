@@ -84,52 +84,13 @@ aria-hidden="true">
 			</div>
 			<div class="modal-body">
 				<!-- Contenido de la ventana modal -->
-				<p class="text-justified">
-					Para agendar un evento de alquiler solo debe seleccionar en el calendario
-					el día que desea realizar el servicio. Tenga en cuenta que no puede reservar
-					el mismo dia en que otra persona haya solicitado la cita. Complete los 
-					datos de solicitud para el equipo de Audiophone S.A. se ponga en contacto a 
+				<p class="text-justify">
+					Para agendar un evento de alquiler solo debe seleccionar la opcion <strong>Nuevo Evento</strong> para solicitar el el servicio. Tenga en cuenta que no puede reservar el mismo dia en que otra persona haya solicitado la cita. Complete los datos de solicitud para el equipo de Audiophone S.A. se ponga en contacto a 
 					través de sus telefonos para confirmar el servicio. <br><br>
 
 					<strong>ATENCIÓN:</strong><br><br>
-					El servicio de Alquiler de Equipos se realiza por día, cada fin de semana.
+					El servicio de Alquiler de Equipos los fines de semana.
 					(Viernes, Sabado y Domingo)
-
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button class="btn btn-default" data-dismiss="modal">
-					Cerrar
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Modal Info Diagnostic -->
-
-<div class="modal fade" id="modalDiagnosticInfo" tabindex="-1" role="dialog" aria-labelledby="modal04"
-aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="modal04">¿Como Agendar un Diagnostico?</h5>
-				<button class="close" type="button" data-dismiss="modal" aria-label="close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<!-- Contenido de la ventana modal -->
-				<p class="text-justified">
-					Para agendar una Diagnostico de Equipos de Audio solo debe seleccionar en el 
-					calendario el día que desea realizar el servicio. Tenga en cuenta que no puede 
-					reservar el mismo dia en que otra persona haya solicitado la cita. 
-				 	Complete los datos de solicitud para el equipo de Audiophone S.A. se ponga 
-				 	en contacto a través de sus telefonos para confirmar el servicio. <br><br>
-
-					<strong>ATENCIÓN:</strong><br><br>
-					El servicio de Diagnostico de Equipos se realiza los días Domingos.
-
 				</p>
 			</div>
 			<div class="modal-footer">
@@ -156,15 +117,10 @@ aria-hidden="true">
 			<div class="modal-body">
 				<!-- Contenido de la ventana modal -->
 				<p class="text-justified">
-					Para agendar una cita de Grabación de Audio solo debe seleccionar en el 
-					calendario el día que desea realizar el servicio. Tenga en cuenta que no puede 
-					reservar el mismo dia en que otra persona haya solicitado la cita. 
-				 	Complete los datos de solicitud para el equipo de Audiophone S.A. se ponga 
-				 	en contacto a través de sus telefonos para confirmar el servicio. <br><br>
+					Para agendar un evento de grabación solo debe seleccionar la opcion <strong>Nuevo Evento</strong> para solicitar el el servicio. Complete los datos de solicitud para el equipo de Audiophone S.A. se ponga en contacto a través de sus telefonos para confirmar el servicio. <br><br>
 
 					<strong>ATENCIÓN:</strong><br><br>
 					El servicio de Grabación de Audio se realiza de Lunes a Jueves.
-
 				</p>
 			</div>
 			<div class="modal-footer">
@@ -175,28 +131,3 @@ aria-hidden="true">
 		</div>
 	</div>
 </div>
-
-<!-- Modal de Prueba calendario (solo se utiliza en pruebas) -->
-<div class="modal fade" tabindex="-1" role="dialog" id="modalCalendar" aria-labelledby="modal06"
-aria-hidden="true">
- 	<div class="modal-dialog modal-lg" role="document">
-    	<div class="modal-content">
-      		<div class="modal-header">
-        		<h5 class="modal-title" id="modal06">Agendar cita:</h5>
-        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          				<span aria-hidden="true">&times;</span>
-        			</button>
-      		</div>
-      	<div class="modal-body">
-        	<p>Agregar texto</p>
-      	</div>
-      	<div class="modal-footer">
-        	<button type="button" class="btn btn-primary">Save changes</button>
-        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      	</div>
-    </div>
-  </div>
-</div>
-
-
-

@@ -36,10 +36,10 @@ aria-hidden="true">
         </button>
       </div>
       <div class="modal-body">
-        <p class="text-justified">
+        <p class="text-justify">
           En esta sección puedes gestionar los usuarios dentro de la aplicación. Puedes consultar la
           informacion dentro de su perfil utilizando la barra de busqueda y otorgarles o revocarles 
-          el acceso. 
+          el acceso a la aplicacion. 
         </p>
       </div>
       <div class="modal-footer">
@@ -49,29 +49,6 @@ aria-hidden="true">
   </div>
 </div>
 
-<!-- Modal de las estadisticas de la aplicacion -->
-<div class="modal fade" tab-index="-1" role="dialog" id="modalEstadistica" aria-labelledby="modal09"
-aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal09">Estadísticas de la aplicación</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="text-justified">
-          En esta sección puedes consultar las estadísticas generadas por las actividad de los
-          usuarios que solicitan tus servicios. 
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>  
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Añadir perfiles del administrador -->
 <div class="modal fade" tab-index="-1" role="dialog" id="modalPAdministrador" aria-labelledby="modal10"
@@ -123,29 +100,7 @@ aria-hidden="true">
   </div>
 </div>
 
-<!-- Modal de dias de grabacion -->
-<div class="modal fade" tab-index="-1" role="dialog" id="modal_D_Grabacion" aria-labelledby="modal12"
-aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal12">Editar de Dias de Grabación</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="text-justified">
-          En esta sección puedes modificar  los días de servicio de grabación<br><br>
-          <!-- Formulario aqui -->
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- Modal de dias de diagnostico -->
 <div class="modal fade" tab-index="-1" role="dialog" id="modal_D_Diagnostico" aria-labelledby="modal13"
@@ -171,30 +126,6 @@ aria-hidden="true">
   </div>
 </div>
 
-<!-- Modal de dias de Renta -->
-<div class="modal fade" tab-index="-1" role="dialog" id="modal_D_Renta" aria-labelledby="modal13"
-aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal13">Editar Dias de Alquiler de Equipos</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="text-justified">
-          En esta sección puedes modificar los días de servicio de alquiler de equipos<br><br>
-          <!-- Formulario aqui -->
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Modal Presupuesto -->
 <div class="modal fade" tab-index="-1" role="dialog" id="modal_Presupuesto" aria-labelledby="modal14"
 aria-hidden="true">
@@ -207,10 +138,9 @@ aria-hidden="true">
         </button>
       </div>
       <div class="modal-body">
-        <p class="text-justified">
-          Bienvenido al modulo del presupuesto aqui podrás colocar y modificar los elementos, precios 
-          los servicios al momento de generar el presupuesto<br><br>
-          <!-- Formulario aqui -->
+        <p class="text-justify">
+          Bienvenido al modulo del presupuesto aqui podrás colocar y modificar los precios y tarifas los servicios al momento de para armar tu presupuesto al cliente. Una vez establecidos los precios solo 
+          debe presionar la opcion <strong>Generar presupuesto</strong> y seleccionar que tipo es que desea exportar a formato PDF
         </p>
       </div>
       <div class="modal-footer">

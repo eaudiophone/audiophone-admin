@@ -30,7 +30,6 @@ Route::get('recovery', function() {
 	return view('user/recoveryPassword');
 });
 
-
 /*
 |--------------------------------------------------------------------------
 | Route User
@@ -39,14 +38,21 @@ Route::get('recovery', function() {
 | Ruta del modulo del Usuario
 |
 */
-
-Route::get('profile', function() {
-	return view('user/profiles/index');
-});
-
 Route::get('createUser', function () {
     return view('user/createUser');
 });
+
+Route::get('profiles', 'UserController@listUsers' );
+
+Route::post('account', 'UserController@createUser');
+Route::get('account/{profile}/{id}', 'UserController@consultUser' );
+Route::put( 'account/{method}/{id}', 'UserController@modifyUser' );
+
+
+// terminar
+Route::delete( 'account/{id}', 'UserController@deleteUser' );
+
+
 /*
 |--------------------------------------------------------------------------
 | Route Meeting
@@ -60,12 +66,6 @@ Route::get('createUser', function () {
 
 Route::get('rental', function() {
 	return view('meeting/rental/index');
-});
-
-//Modulo de diagnostico 
-
-Route::get('diagnostic', function() {
-	return view('meeting/diagnostic/index');
 });
 
 //Modulo de grabacion
@@ -85,12 +85,10 @@ Route::get('records', function() {
 */
 
 Route::get('admin', function() {
-	return view('admin/index');
+	return view('admin/calendar/index');
 });
 
-Route::get('profiles', function() {
-	return view('admin/profiles');
-});
+
 
 Route::get('estadistic', function() {
 	return view('admin/estadistic');
@@ -101,13 +99,10 @@ Route::get('show', function() {
 });
 
 Route::get('days', function() {
-	return view('admin/days');
+	return view('admin/days/index');
 });
 
 Route::get('budget', function() {
-	return view('admin/budget');
+	return view('admin/budget/index');
 });
 
-Route::get('adminProfile', function() {
-	return view('admin/adminProfile');
-});
